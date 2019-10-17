@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!-- internal dtd -->
+<!DOCTYPE channel [ 
+	<!ELEMENT channel (item, title, link, language, image?, description?)>
+		<!-- all possbile arrangements -->
+		<!ELEMENT item ((title, description?, link) 
+						| (title, link, description?) 
+						| (title, description?, link) 
+						| (link, title, description?) 
+						| (link, description?, title)
+						| (description?, title, link)
+						| (description?, link, title))>
+
+		<!-- all possbile arrangements -->
+		<!ELEMENT image ((title, link, url) 
+						| (title, url, link) 
+						| (link, title, url) 
+						| (link, url, title) 
+						| (url, title, link) 
+						| (url, link, title))>
+
+		<!ELEMENT title (#PCDATA)>
+		<!ELEMENT link (#PCDATA)>	
+		<!ELEMENT language (#PCDATA)>	
+		<!ELEMENT url (#PCDATA)>
+		<!ELEMENT description (#PCDATA)>
+
+
+		<!ATTLIST channel version CDATA #IMPLIED>
+]>
+
+<channel>
+	<item>
+		<title>item title</title>
+		<link>www.example.com</link>
+		<description>optional description</description>
+	</item>
+
+	<title>channel titile</title>
+	<link>www.chanel.com</link>
+	<language>bulgarin</language>
+
+
+
+</channel>
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-16"?>
+
+<document 
+	xmlns:n1="http://www.namespace-one.com"
+	xmlns:n2="http://www.namespace-two.com">
+
+	<n1:book>
+		<title>A true story</title>
+		<description>A real cool publication</description>
+	</n1:book>
+
+	<n2:record>
+		<name>Miller</name>
+		<title>Dr. </title>
+		<publications> ... </publications>
+	</n2:record>
+
+	<!-- default namespaces -->
+	<book xmlns="http://www.namespace-three.com">
+		<title>A true story</title>
+		<description>A real cool publication</description>
+	</book>
+
+	<record xmlns="http://www.namespace-four.com">
+		<name>Miller</name>
+		<title>Dr. </title>
+		<publications> ... </publications>
+	</record>
+
+	<table>
+	  <tr>
+	    <td>Apples</td>
+	    <td>Bananas</td>
+	  </tr>
+	</table>
+
+	<table>
+	  <name>African Coffee Table</name>
+	  <width>80</width>
+	  <length>120</length>
+	</table>
+
+
+</document>

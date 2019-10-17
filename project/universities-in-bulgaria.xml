@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- TODO
+
+ -->
+
+
+<!-- innter dtd for now -->
+<!DOCTYPE universitiesInBulgaria [
+	<!ELEMENT universitiesInBulgaria (universities, regions)>
+		<!ELEMENT universities (university+)>
+			<!ELEMENT university (univDetails, univContacts, listOfFaculties, listOfBranches?, listOfDepartments?)>
+			
+				<!ELEMENT univDetails (name, yearFounded, numberOfStudents, numberOfBachPrograms?, numberOfMstPrograms?, numberOfPhDPrograms?)>
+			 		<!ELEMENT name (#PCDATA)>
+			 		<!ELEMENT yearFounded (#PCDATA)>
+			 		<!ELEMENT numberOfStudents (#PCDATA)>
+			 		<!ELEMENT numberOfBachPrograms (#PCDATA)>
+			 		<!ELEMENT numberOfMstPrograms (#PCDATA)>
+			 		<!ELEMENT numberOfPhDPrograms (#PCDATA)>
+
+			 	<!ELEMENT univContacts (location, phone, webSite, email)>
+					<!ELEMENT location (#PCDATA)>
+			 		<!ELEMENT phone (#PCDATA)>
+			 		<!ELEMENT webSite (#PCDATA)>
+			 		<!ELEMENT email (#PCDATA)>
+
+			 	<!ELEMENT listOfFaculties (facultyName+)>
+			 		<!ELEMENT facultyName (#PCDATA)>
+
+			 	<!ELEMENT listOfBranches (branch+)>
+			 		<!ELEMENT branch (#PCDATA)>
+
+			 	<!ELEMENT listOfDepartments (department+)>
+			 		<!ELEMENT department (#PCDATA)>
+
+		<!ELEMENT regions (region+)>
+			<!ELEMENT region (regionName, regionDetails)>
+				<!ELEMENT regionName (#PCDATA)>
+				<!ELEMENT regionDetails EMPTY>
+
+
+	<!-- universities attribute list -->
+	<!ATTLIST university univId ID #REQUIRED>
+	<!ATTLIST location regionIDRef IDREFS #REQUIRED>
+	<!-- are these below CDATA? -->
+	<!ATTLIST webSite href CDATA #REQUIRED>
+	<!ATTLIST email mailAddress CDATA #REQUIRED>
+	<!-- entities, for images, logos?? -->
+	<!-- ... -->
+
+	<!-- regions attribute list -->
+	<!ATTLIST regionDetails regionID ID #REQUIRED>
+
+
+]>
+
+<universitiesInBulgaria>
+	<universities>
+		<university univId="uni1">
+			<univDetails>
+				<name>Софийски университет "Св. Климент Охридски"</name>
+				<yearFounded>1888</yearFounded>
+				<numberOfStudents>24000</numberOfStudents>
+				<numberOfBachPrograms>117</numberOfBachPrograms>
+			</univDetails>
+			<univContacts>
+				<location regionIDRef="BG41">София</location>
+				<phone>02 930 8200</phone>
+				<webSite href="www.uni-sofia.bg">www.uni-sofia.bg</webSite>
+				<email mailAddress="https://email.uni-sofia.bg">https://email.uni-sofia.bg</email>
+			</univContacts>
+			<listOfFaculties>
+				<facultyName>Исторически факултет</facultyName>
+				<facultyName>Философски факултет</facultyName>
+				<facultyName>Факултет по класически и нови филологии</facultyName>
+				<facultyName>Факултет по славянски филологии</facultyName>
+				<facultyName>Юридически факултет</facultyName>
+				<facultyName>Факултет по педагогика</facultyName>
+				<facultyName>Факултет по наука за образованието и изкуствата</facultyName>
+				<facultyName>Факултет по журналистика и масова комуникация</facultyName>
+				<facultyName>Богословски факултет</facultyName>
+				<facultyName>Стопански факултет</facultyName>
+				<facultyName>Факултет по математика и информатика</facultyName>
+				<facultyName>Физически факултет</facultyName>
+				<facultyName>Факултет по химия и фармация</facultyName>
+				<facultyName>Биологически факултет</facultyName>
+				<facultyName>Геолого-географски факултет</facultyName>
+				<facultyName>Медицински факултет</facultyName>
+			</listOfFaculties>
+			<listOfDepartments>
+				<department>Департамент за езиково обучение</department>	
+				<department>Департамент за информация и усъвършенстване на учители</department>	
+				<department>Департамент по спорт</department>	
+			</listOfDepartments>
+		</university>
+
+	</universities>
+
+	<regions>
+		<region>
+			<regionName>Североизточен регион</regionName>
+			<regionDetails regionID="BG33"/>
+		</region>
+
+		<region>
+			<regionName>Северен централен регион</regionName>
+			<regionDetails regionID="BG32"/>
+		</region>
+
+		<region>
+			<regionName>Северозападен регион</regionName>
+			<regionDetails regionID="BG31"/>
+		</region>
+
+		<region>
+			<regionName>Югоизточен регион</regionName>
+			<regionDetails regionID="BG34"/>
+		</region>
+
+		<region>
+			<regionName>Южен централен регион</regionName>
+			<regionDetails regionID="BG42"/>
+		</region>
+
+		<region>
+			<regionName>Югозападен регион</regionName>
+			<regionDetails regionID="BG41"/>
+		</region>
+	</regions>	
+
+</universitiesInBulgaria>

@@ -1,0 +1,42 @@
+<!-- internal dtd -->
+<!DOCTYPE channel [ 
+	<!ELEMENT channel (item, title, link, language, image?, description?)>
+		<!-- all possbile arrangements -->
+		<!ELEMENT item ((title, description?, link) 
+						| (title, link, description?) 
+						| (title, description?, link) 
+						| (link, title, description?) 
+						| (link, description?, title)
+						| (description?, title, link)
+						| (description?, link, title))>
+
+		<!-- all possbile arrangements -->
+		<!ELEMENT image ((title, link, url) 
+						| (title, url, link) 
+						| (link, title, url) 
+						| (link, url, title) 
+						| (url, title, link) 
+						| (url, link, title))>
+
+		<!ELEMENT title (#PCDATA)>
+		<!ELEMENT link (#PCDATA)>	
+		<!ELEMENT language (#PCDATA)>	
+		<!ELEMENT url (#PCDATA)>
+		<!ELEMENT description (#PCDATA)>
+
+
+		<!ATTLIST channel version CDATA #IMPLIED>
+
+		<!NOTATION jpeg SYSTEM "image/jpeg">
+		<!NOTATION gif SYSTEM "image/gif">
+		<!NOTATION png SYSTEM "image/png">
+
+		<!ENTITY movingImage SYSTEM "first.gif">
+
+		<!-- parametrized entity -->
+		<!ENTITY % title "hello emtities">
+
+		<!ENTITY xmlTitle "xml">
+		<!-- composed entity -->
+		<!ENTITY xmlForSemanticWeb &xmlTitle; "for semantic web">
+]>

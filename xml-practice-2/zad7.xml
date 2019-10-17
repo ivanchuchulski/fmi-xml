@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE channel SYSTEM "zad7.dtd">
+
+<channel>
+	<item>
+		<title>item title</title>
+		<link>www.example.com</link>
+		<description>optional description</description>
+	</item>
+
+	<title>channel titile</title>
+	<link>www.chanel.com</link>
+	<language>bulgarin</language>
+</channel>

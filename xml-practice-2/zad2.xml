@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE gamins [
+	<!ELEMENT gamins (gamin+)>
+
+	 	<!ELEMENT gamin (home-team, ex-team, scores, yellows, reds)>
+			<!ELEMENT player (#PCDATA)>
+
+			<!ELEMENT home-team (#PCDATA)>			
+			<!ELEMENT ex-team (#PCDATA)>
+			<!ELEMENT scores (score+)>
+				<!ELEMENT score (player*)>
+			<!ELEMENT yellows (player*)>
+			<!ELEMENT reds (player*)>
+		
+	<!ATTLIST gamin score CDATA #REQUIRED>	
+	<!ATTLIST score min CDATA #REQUIRED type (penalty | corner | freekick | shot | head) #IMPLIED>		
+]>
+
+<gamins>
+	<gamin score="1-1">
+		<home-team>Roma</home-team>
+
+		<ex-team>Lazio</ex-team>
+
+		<scores>
+			<score min="15" type="head">
+				<player>Klose</player>
+			</score>
+
+			<score min="85" type="penalty">
+				<player>Tox</player>
+			</score>
+		</scores>
+
+		<yellows>
+			<player>Tox</player>
+			<player>Hernanes</player>
+		</yellows>
+
+		<reds>
+			<player>Kjaer</player>
+		</reds>
+	</gamin>
+</gamins>
