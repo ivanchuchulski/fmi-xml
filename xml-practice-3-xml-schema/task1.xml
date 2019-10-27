@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+
+<collection 
+	xmlns="https://www.w3schools.com"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://www.w3schools.com task1.xsd">
+
+	<description>collection of recipes</description>
+
+	<recipe>
+		<title>how to</title>
+		<ingredient name="ingr1" amount="1" unit="g">
+			<preparation>
+				<step>step1</step>
+				<step>step2</step>
+			</preparation>
+		</ingredient>
+		<ingredient name="ingr2" amount="2" unit="mg"></ingredient>
+		<preparation>
+			<step>overallStep1</step>
+			<step>overallStep2</step>
+		</preparation>
+		<nutrition protein="1" carbohydrates="2" fat="3" calories="4" alcohol="5"></nutrition>
+	</recipe>
+
+</collection>
