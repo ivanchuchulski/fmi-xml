@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<xs:schema 
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="https://www.w3schools.com"
+	xmlns="https://www.w3schools.com"
+	elementFormDefault="qualified">
+
+	<!-- some of my types -->
+
+	<!-- complex element which is empty with attributes -->
+	<xs:complexType name="EmptyWithOneAttribute">
+		<xs:attribute name="attr1" type="xs:string"></xs:attribute>
+	</xs:complexType>
+		
+	<!-- complex elements with content(string) and 2 attributes -->
+	<xs:complexType name="StringWithTwoAttributes">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="attr1" type="xs:string"></xs:attribute>
+				<xs:attribute name="attr2" type="xs:string"></xs:attribute>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<!-- complex element with text and attributes -->
+	<xs:complexType name="MixedComplexWithAttributes" mixed="true">
+		<xs:sequence> 
+			<xs:element name="name" type="xs:string"></xs:element>
+			<xs:element name="orderid" type="xs:positiveInteger"></xs:element>
+			<xs:element name="shipdate" type="xs:date"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- document description -->
+	<xs:element name="playground">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="product" type="EmptyWithOneAttribute"></xs:element>
+				<xs:element name="person" type="StringWithTwoAttributes"></xs:element>
+				<xs:element name="letter" type="MixedComplexWithAttributes"></xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

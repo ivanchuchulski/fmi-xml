@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<playground xmlns="https://www.w3schools.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="https://www.w3schools.com playground.xsd">
+
+	<product attr1="123"></product>
+	<person attr1="a1" attr2="a2">3215</person>
+
+	<letter attr1="idk" attr2="opa">
+	Dear Mr. <name>John Smith</name>.
+	Your order <orderid>1032</orderid>
+	will be shipped on <shipdate>2001-07-13</shipdate>.
+	</letter>
+
+</playground>
