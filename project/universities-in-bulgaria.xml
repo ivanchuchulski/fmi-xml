@@ -3,58 +3,10 @@
 <!-- TODO
 
  -->
+<!-- outer dtd reference -->
+<!DOCTYPE universitiesInBulgaria SYSTEM "universities-in-bulgaria.dtd"]>
 
-
-<!-- innter dtd for now -->
-<!DOCTYPE universitiesInBulgaria [
-	<!ELEMENT universitiesInBulgaria (universities, regions)>
-		<!ELEMENT universities (university+)>
-			<!ELEMENT university (univDetails, univContacts, listOfFaculties, listOfBranches?, listOfDepartments?)>
-			
-				<!ELEMENT univDetails (name, yearFounded, numberOfStudents, numberOfBachPrograms?, numberOfMstPrograms?, numberOfPhDPrograms?)>
-			 		<!ELEMENT name (#PCDATA)>
-			 		<!ELEMENT yearFounded (#PCDATA)>
-			 		<!ELEMENT numberOfStudents (#PCDATA)>
-			 		<!ELEMENT numberOfBachPrograms (#PCDATA)>
-			 		<!ELEMENT numberOfMstPrograms (#PCDATA)>
-			 		<!ELEMENT numberOfPhDPrograms (#PCDATA)>
-
-			 	<!ELEMENT univContacts (location, phone, webSite, email)>
-					<!ELEMENT location (#PCDATA)>
-			 		<!ELEMENT phone (#PCDATA)>
-			 		<!ELEMENT webSite (#PCDATA)>
-			 		<!ELEMENT email (#PCDATA)>
-
-			 	<!ELEMENT listOfFaculties (facultyName+)>
-			 		<!ELEMENT facultyName (#PCDATA)>
-
-			 	<!ELEMENT listOfBranches (branch+)>
-			 		<!ELEMENT branch (#PCDATA)>
-
-			 	<!ELEMENT listOfDepartments (department+)>
-			 		<!ELEMENT department (#PCDATA)>
-
-		<!ELEMENT regions (region+)>
-			<!ELEMENT region (regionName, regionDetails)>
-				<!ELEMENT regionName (#PCDATA)>
-				<!ELEMENT regionDetails EMPTY>
-
-
-	<!-- universities attribute list -->
-	<!ATTLIST university univId ID #REQUIRED>
-	<!ATTLIST location regionIDRef IDREFS #REQUIRED>
-	<!-- are these below CDATA? -->
-	<!ATTLIST webSite href CDATA #REQUIRED>
-	<!ATTLIST email mailAddress CDATA #REQUIRED>
-	<!-- entities, for images, logos?? -->
-	<!-- ... -->
-
-	<!-- regions attribute list -->
-	<!ATTLIST regionDetails regionID ID #REQUIRED>
-
-
-]>
-
+<!-- xml structure -->
 <universitiesInBulgaria>
 	<universities>
 		<university univId="uni1">
