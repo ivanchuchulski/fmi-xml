@@ -5,13 +5,14 @@
  -->
 
 
-<!DOCTYPE universitiesInBulgaria [ 
+<!-- <!DOCTYPE universitiesInBulgaria [  -->
 <!ELEMENT universitiesInBulgaria (universities, regions)>
 	<!ELEMENT universities (university+)>
 		<!ELEMENT university (univDetails, univContacts, listOfFaculties, listOfBranches?, listOfDepartments?)>		
-			<!ELEMENT univDetails (name, yearFounded, numberOfStudents, numberOfBachPrograms?, numberOfMstPrograms?, numberOfPhDPrograms?)>
+			<!ELEMENT univDetails (name, yearFounded, univImage, numberOfStudents, numberOfBachPrograms?, numberOfMstPrograms?, numberOfPhDPrograms?)>
 		 		<!ELEMENT name (#PCDATA)>
 		 		<!ELEMENT yearFounded (#PCDATA)>
+		 		<!ELEMENT univImage EMPTY>
 		 		<!ELEMENT numberOfStudents (#PCDATA)>
 		 		<!ELEMENT numberOfBachPrograms (#PCDATA)>
 		 		<!ELEMENT numberOfMstPrograms (#PCDATA)>
@@ -40,6 +41,7 @@
 
 <!-- universities attribute list -->
 <!ATTLIST university univId ID #REQUIRED>
+<!ATTLIST univImage source ENTITY #REQUIRED>
 <!ATTLIST location regionIDRef IDREFS #REQUIRED>
 <!-- these could be made entities  -->
 <!ATTLIST webSite href CDATA #REQUIRED>
@@ -51,4 +53,10 @@
 <!-- regions attribute list -->
 <!ATTLIST regionDetails regionID ID #REQUIRED>
 
-]>
+<!-- notations -->
+<!NOTATION jpg PUBLIC "jpg viewer">
+
+<!-- entities -->
+<!ENTITY su SYSTEM "university-images/su.jpg" NDATA jpg>
+
+<!-- ]> -->

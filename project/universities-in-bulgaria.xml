@@ -4,7 +4,7 @@
 
  -->
 <!-- outer dtd reference -->
-<!DOCTYPE universitiesInBulgaria SYSTEM "universities-in-bulgaria.dtd"]>
+<!DOCTYPE universitiesInBulgaria SYSTEM "universities-in-bulgaria.dtd">
 
 <!-- xml structure -->
 <universitiesInBulgaria>
@@ -13,6 +13,7 @@
 			<univDetails>
 				<name>Софийски университет "Св. Климент Охридски"</name>
 				<yearFounded>1888</yearFounded>
+				<univImage source="su"></univImage>
 				<numberOfStudents>24000</numberOfStudents>
 				<numberOfBachPrograms>117</numberOfBachPrograms>
 			</univDetails>
