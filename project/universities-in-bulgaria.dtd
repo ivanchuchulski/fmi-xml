@@ -5,27 +5,37 @@
  -->
 
 
-<!-- <!DOCTYPE universitiesInBulgaria [  -->
+<!DOCTYPE universitiesInBulgaria [ 
 <!ELEMENT universitiesInBulgaria (universities, regions)>
 	<!ELEMENT universities (university+)>
-		<!ELEMENT university (univDetails, univContacts, listOfFaculties, listOfBranches?, listOfDepartments?)>		
-			<!ELEMENT univDetails (name, yearFounded, univImage, numberOfStudents, numberOfBachPrograms?, numberOfMstPrograms?, numberOfPhDPrograms?)>
+		<!ELEMENT university (univDetails, univContacts, programAccreditation, listOfFaculties, listOfBranches?, listOfDepartments?)>		
+			<!ELEMENT univDetails (name, yearFounded, univImage, rectorName, 
+									numberOfStudents, numberOfBachPrograms?, numberOfMstPrograms?, numberOfPhDPrograms?)>
 		 		<!ELEMENT name (#PCDATA)>
 		 		<!ELEMENT yearFounded (#PCDATA)>
 		 		<!ELEMENT univImage EMPTY>
+		 		<!ELEMENT rectorName (#PCDATA)>
 		 		<!ELEMENT numberOfStudents (#PCDATA)>
 		 		<!ELEMENT numberOfBachPrograms (#PCDATA)>
 		 		<!ELEMENT numberOfMstPrograms (#PCDATA)>
 		 		<!ELEMENT numberOfPhDPrograms (#PCDATA)>
 
 		 	<!ELEMENT univContacts (location, phone, webSite, email)>
-				<!ELEMENT location (#PCDATA)>
+				<!ELEMENT location (city, street)>
+					<!ELEMENT city (#PCDATA)>
+					<!ELEMENT street (#PCDATA)>
+				<!ELEMENT postalCode (#PCDATA)>
 		 		<!ELEMENT phone (#PCDATA)>
 		 		<!ELEMENT webSite (#PCDATA)>
 		 		<!ELEMENT email (#PCDATA)>
 
-		 	<!ELEMENT listOfFaculties (facultyName+)>
-		 		<!ELEMENT facultyName (#PCDATA)>
+		 	<!ELEMENT programAccreditation (program*)>
+		 		<!ELEMENT program (programName, accreditationScore)>
+		 			<!ELEMENT programName (#PCDATA)>
+		 			<!ELEMENT accreditationScore (#PCDATA)>
+
+		 	<!ELEMENT listOfFaculties (faculty+)>
+		 		<!ELEMENT faculty (#PCDATA)>
 
 		 	<!ELEMENT listOfBranches (branch+)>
 		 		<!ELEMENT branch (#PCDATA)>
@@ -47,9 +57,6 @@
 <!ATTLIST webSite href CDATA #REQUIRED>
 <!ATTLIST email mailAddress CDATA #REQUIRED>
 
-<!-- entities, for images, logos?? -->
-<!-- ... -->
-
 <!-- regions attribute list -->
 <!ATTLIST regionDetails regionID ID #REQUIRED>
 
@@ -59,4 +66,4 @@
 <!-- entities -->
 <!ENTITY su SYSTEM "university-images/su.jpg" NDATA jpg>
 
-<!-- ]> -->
+]>
