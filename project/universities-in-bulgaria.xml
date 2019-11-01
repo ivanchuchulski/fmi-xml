@@ -29,7 +29,7 @@
 				<webSite href="www.uni-sofia.bg">www.uni-sofia.bg</webSite>
 				<email mailAddress="https://email.uni-sofia.bg">https://email.uni-sofia.bg</email>
 			</univContacts>
-			<programAccreditation>
+			<programsAccreditation>
 				<program>
 					<programName>Администрация и управление</programName>
 					<accreditationScore>9.45</accreditationScore>
@@ -51,7 +51,7 @@
 					<accreditationScore>9.73</accreditationScore>
 				</program>
 				<!-- maybe add more later -->
-			</programAccreditation>
+			</programsAccreditation>
 			<listOfFaculties>
 				<faculty>Исторически факултет</faculty>
 				<faculty>Философски факултет</faculty>
@@ -98,7 +98,7 @@
 				<webSite href="www.aubg.edu/">www.aubg.edu</webSite>
 				<email mailAddress="registrar@aubg.edu">registrar@aubg.edu</email>
 			</univContacts>
-			<programAccreditation>
+			<programsAccreditation>
 				<program>
 					<programName>Администрация и управление</programName>
 					<accreditationScore>9.42</accreditationScore>
@@ -127,7 +127,7 @@
 					<programName>Политически науки</programName>
 					<accreditationScore>9.17</accreditationScore>
 				</program>
-			</programAccreditation>
+			</programsAccreditation>
 			<listOfFaculties>
 				<faculty>академичен център "Балкански"</faculty>
 				<faculty>библиотека "Паница"</faculty>
@@ -137,6 +137,70 @@
 				<branch>АУБ филиал в "Илиев център" - София</branch>
 			</listOfBranches>
 		</university>
+
+		<!-- Варненски свободен -->
+		<university univId="uni3">
+			<univDetails>
+				<name>Варненски свободен университет "Черноризец Храбър</name>
+				<yearFounded>1991</yearFounded>
+				<!-- <univImage source="asdfjk"></univImage> -->
+				<rectorName>проф. д-р Петър Христов</rectorName>
+				<numberOfStudents>8000</numberOfStudents>
+				<numberOfBachPrograms>37</numberOfBachPrograms>
+			</univDetails>
+			<univContacts>
+				<location regionIDRef="BG33">
+					<city>Варна</city>
+					<street>ул. "Янко Славчев" №84, 9007 Чайка</street>
+				</location>
+				<postalCode>9000</postalCode>
+				<phone>052/359506</phone>
+				<webSite href="www.vfu.bg">www.vfu.bg</webSite>
+				<email mailAddress="rector@vfu.bg">rector@vfu.bg</email>
+			</univContacts>
+			<programsAccreditation>
+				<program>
+					<programName>Администрация и управление</programName>
+					<accreditationScore>9.30</accreditationScore>
+				</program>
+				<program>
+					<programName>Архитектура, строителство и геодезия</programName>
+					<accreditationScore>9.07</accreditationScore>
+				</program>
+				<program>
+					<programName>Изобразително изкуство</programName>
+					<accreditationScore>9.15</accreditationScore>
+				</program>
+				<program>
+					<programName>Икономика</programName>
+					<accreditationScore>9.01</accreditationScore>
+				</program>
+				<program>
+					<programName>Музикално и танцово изкуство</programName>
+					<accreditationScore>8.76</accreditationScore>
+				</program>
+				<program>
+					<programName>Национална сигурност</programName>
+					<accreditationScore>9.25</accreditationScore>
+				</program>
+				<program>
+					<programName>Психология</programName>
+					<accreditationScore>9.06</accreditationScore>
+				</program>
+			</programsAccreditation>
+			<listOfFaculties>
+				<faculty>Факултет "Международна икономика и администрация</faculty>
+				<faculty>Юридически факултет</faculty>
+				<faculty>Архитектурен факултет</faculty>
+			</listOfFaculties>
+			<listOfBranches>
+				<branch>Филиал Смолян</branch>
+			</listOfBranches>
+			<listOfDepartments>
+				<department>Департамент чуждоезиково обучение</department>
+			</listOfDepartments>
+		</university>
+
 
 		<!-- template -->
 		<university univId="asdfjk">
@@ -159,7 +223,7 @@
 				<webSite href="asdfjk">asdfjk</webSite>
 				<email mailAddress="asdfjk">asdfjk</email>
 			</univContacts>
-			<programAccreditation>
+			<programsAccreditation>
 				<program>
 					<programName>asdfjk</programName>
 					<accreditationScore>9.42</accreditationScore>
@@ -188,12 +252,18 @@
 					<programName>asdfjk</programName>
 					<accreditationScore>9.17</accreditationScore>
 				</program>
-			</programAccreditation>
+			</programsAccreditation>
 			<listOfFaculties>
 				<faculty>asdfjk</faculty>
 				<faculty>asdfjk</faculty>
 				<faculty>asdfjk</faculty>
 			</listOfFaculties>
+			<listOfBranches>
+				<branch>asdfjk</branch>
+			</listOfBranches>
+			<listOfDepartments>
+				<department>asdfjk</department>
+			</listOfDepartments>
 		</university>
 
 	</universities>
