@@ -29,7 +29,7 @@
 		 		<!ELEMENT webSite (#PCDATA)>
 		 		<!ELEMENT email (#PCDATA)>
 
-		 	<!ELEMENT programAccreditation (program*)>
+		 	<!ELEMENT programsAccreditation (program*)>
 		 		<!ELEMENT program (programName, accreditationScore)>
 		 			<!ELEMENT programName (#PCDATA)>
 		 			<!ELEMENT accreditationScore (#PCDATA)>
