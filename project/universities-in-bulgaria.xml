@@ -138,6 +138,64 @@
 			</listOfBranches>
 		</university>
 
+		<!-- template -->
+		<university univId="asdfjk">
+			<univDetails>
+				<name>asdfjk</name>
+				<yearFounded>asdfjk</yearFounded>
+				<!-- <univImage source="asdfjk"></univImage> -->
+				<rectorName>asdfjk</rectorName>
+				<numberOfStudents>asdfjk</numberOfStudents>
+				<numberOfBachPrograms>asdfjk</numberOfBachPrograms>
+				<numberOfMstPrograms>asdfjk</numberOfMstPrograms>
+			</univDetails>
+			<univContacts>
+				<location regionIDRef="asdfjk">
+					<city>asdfjk</city>
+					<street>asdfjk</street>
+				</location>
+				<postalCode>asdfjk</postalCode>
+				<phone>asdfjk</phone>
+				<webSite href="asdfjk">asdfjk</webSite>
+				<email mailAddress="asdfjk">asdfjk</email>
+			</univContacts>
+			<programAccreditation>
+				<program>
+					<programName>asdfjk</programName>
+					<accreditationScore>9.42</accreditationScore>
+				</program>
+				<program>
+					<programName>asdfjk</programName>
+					<accreditationScore>9.12</accreditationScore>
+				</program>
+				<program>
+					<programName>asdfjk</programName>
+					<accreditationScore>9.18</accreditationScore>
+				</program>
+				<program>
+					<programName>asdfjk</programName>
+					<accreditationScore>9.00</accreditationScore>
+				</program>
+				<program>
+					<programName>asdfjk</programName>
+					<accreditationScore>9.27</accreditationScore>
+				</program>
+				<program>
+					<programName>asdfjk</programName>
+					<accreditationScore>9.15</accreditationScore>
+				</program>
+				<program>
+					<programName>asdfjk</programName>
+					<accreditationScore>9.17</accreditationScore>
+				</program>
+			</programAccreditation>
+			<listOfFaculties>
+				<faculty>asdfjk</faculty>
+				<faculty>asdfjk</faculty>
+				<faculty>asdfjk</faculty>
+			</listOfFaculties>
+		</university>
+
 	</universities>
 
 	<regions>
