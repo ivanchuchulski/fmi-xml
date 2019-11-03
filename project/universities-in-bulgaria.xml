@@ -272,6 +272,63 @@
 			</listOfDepartments>
 		</university>
 
+		<!-- Медицински София -->
+		<university univId="uni5">
+			<univDetails>
+				<name>Медицински университет - София</name>
+				<yearFounded>1917</yearFounded>
+				<!-- <univImage source="asdfjk"></univImage> -->
+				<rectorName>проф. д-р Виктор Златков</rectorName>
+				<numberOfStudents>8311</numberOfStudents>
+				<numberOfBachPrograms>25</numberOfBachPrograms>
+				<numberOfMstPrograms>11</numberOfMstPrograms>
+				<numberOfPhDPrograms>80</numberOfPhDPrograms>
+			</univDetails>
+			<univContacts>
+				<location regionIDRef="BG41">
+					<city>София</city>
+					<street>бул. Акад. Ив. Гешов № 15</street>
+				</location>
+				<postalCode>1431</postalCode>
+				<phone>02 9523 3791</phone>
+				<webSite href="www.mu-sofia.bg">www.mu-sofia.bg</webSite>
+				<email mailAddress="rector@mu-sofia.bg">rector@mu-sofia.bg</email>
+			</univContacts>
+			<programsAccreditation>
+				<program>
+					<programName>Здравни грижи</programName>
+					<accreditationScore>8.67</accreditationScore>
+				</program>
+				<program>
+					<programName>Медицина</programName>
+					<accreditationScore>9.74</accreditationScore>
+				</program>
+				<program>
+					<programName>Обществено здраве</programName>
+					<accreditationScore>8.76</accreditationScore>
+				</program>
+				<program>
+					<programName>Стоматология</programName>
+					<accreditationScore>9.56</accreditationScore>
+				</program>
+				<program>
+					<programName>Фармация</programName>
+					<accreditationScore>9.70</accreditationScore>
+				</program>
+			</programsAccreditation>
+			<listOfFaculties>
+				<faculty>Медицински факултет</faculty>
+				<faculty>Факултет по дентална медицина</faculty>
+				<faculty>Фармацевтичен факултет</faculty>
+				<faculty>Факултет по обществено здраве</faculty>
+			</listOfFaculties>
+			<listOfBranches>
+				<branch>Филиал „Проф. д-р Иван Митев” - Враца </branch>
+			</listOfBranches>
+			<listOfDepartments>
+				<department>Департамент по езиково обучение и студентски спорт</department>
+			</listOfDepartments>
+		</university>
 
 		<!-- template -->
 		<university univId="asdfjk">
