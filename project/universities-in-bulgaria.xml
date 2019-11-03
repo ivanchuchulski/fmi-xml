@@ -24,10 +24,10 @@
 					<city>София</city>
 					<street>бул. "Цар Освободител" №15</street>
 				</location>
-				<postalCode>d1504</postalCode>
+				<postalCode>1504</postalCode>
 				<phone>02 930 8200</phone>
 				<webSite href="www.uni-sofia.bg">www.uni-sofia.bg</webSite>
-				<email mailAddress="https://email.uni-sofia.bg">https://email.uni-sofia.bg</email>
+				<email mailAddress="email.uni-sofia.bg">email.uni-sofia.bg</email>
 			</univContacts>
 			<programsAccreditation>
 				<program>
@@ -50,7 +50,6 @@
 					<programName>Педагогика</programName>
 					<accreditationScore>9.73</accreditationScore>
 				</program>
-				<!-- maybe add more later -->
 			</programsAccreditation>
 			<listOfFaculties>
 				<faculty>Исторически факултет</faculty>
@@ -684,73 +683,75 @@
 			</listOfDepartments>
 		</university>
 
-		<!-- template -->
-		<university univId="asdfjk">
+		<!-- Шуменски -->
+		<university univId="uni12">
 			<univDetails>
-				<name>asdfjk</name>
-				<yearFounded>asdfjk</yearFounded>
+				<name>Шуменски университет "Епископ Константин Преславски"</name>
+				<yearFounded>1971</yearFounded>
 				<!-- <univImage source="asdfjk"></univImage> -->
-				<rectorName>asdfjk</rectorName>
-				<numberOfStudents>asdfjk</numberOfStudents>
-				<numberOfBachPrograms>asdfjk</numberOfBachPrograms>
-				<numberOfMstPrograms>asdfjk</numberOfMstPrograms>
-				<numberOfPhDPrograms>asdfjk</numberOfPhDPrograms>
+				<rectorName>проф. Георги Колев</rectorName>
+				<numberOfStudents>9876</numberOfStudents>
+				<numberOfBachPrograms>50</numberOfBachPrograms>
+				<numberOfMstPrograms>41</numberOfMstPrograms>
+				<numberOfPhDPrograms>23</numberOfPhDPrograms>
 			</univDetails>
 			<univContacts>
-				<location regionIDRef="asdfjk">
-					<city>asdfjk</city>
-					<street>asdfjk</street>
+				<location regionIDRef="BG33">
+					<city>Шумен</city>
+					<street>ул. "Университетска" 115</street>
 				</location>
-				<postalCode>asdfjk</postalCode>
-				<phone>asdfjk</phone>
-				<webSite href="asdfjk">asdfjk</webSite>
-				<email mailAddress="asdfjk">asdfjk</email>
+				<postalCode>9712</postalCode>
+				<phone>054 830 495</phone>
+				<webSite href="www.shu.bg">www.shu.bg</webSite>
+				<email mailAddress="rector@shu.bg">rector@shu.bg</email>
 			</univContacts>
 			<programsAccreditation>
 				<program>
-					<programName>asdfjk</programName>
-					<accreditationScore>9.42</accreditationScore>
+					<programName>Архитектура, строителство и геодезияsdfjk</programName>
+					<accreditationScore>9.13</accreditationScore>
 				</program>
 				<program>
-					<programName>asdfjk</programName>
-					<accreditationScore>9.12</accreditationScore>
-				</program>
-				<program>
-					<programName>asdfjk</programName>
-					<accreditationScore>9.18</accreditationScore>
-				</program>
-				<program>
-					<programName>asdfjk</programName>
-					<accreditationScore>9.00</accreditationScore>
-				</program>
-				<program>
-					<programName>asdfjk</programName>
-					<accreditationScore>9.27</accreditationScore>
-				</program>
-				<program>
-					<programName>asdfjk</programName>
+					<programName>Биологически науки</programName>
 					<accreditationScore>9.15</accreditationScore>
 				</program>
 				<program>
-					<programName>asdfjk</programName>
-					<accreditationScore>9.17</accreditationScore>
+					<programName>Икономика</programName>
+					<accreditationScore>8.55</accreditationScore>
+				</program>
+				<program>
+					<programName>Информатика и компютърни науки</programName>
+					<accreditationScore>9.03</accreditationScore>
+				</program>
+				<program>
+					<programName>История и археология</programName>
+					<accreditationScore>7.72</accreditationScore>
+				</program>
+				<program>
+					<programName>Комуникационна и компютърна техника</programName>
+					<accreditationScore>9.06</accreditationScore>
+				</program>
+				<program>
+					<programName>Математика</programName>
+					<accreditationScore>9.08</accreditationScore>
 				</program>
 			</programsAccreditation>
 			<listOfFaculties>
-				<faculty>asdfjk</faculty>
-				<faculty>asdfjk</faculty>
-				<faculty>asdfjk</faculty>
+				<faculty>Факултет по хуманитарни науки</faculty>
+				<faculty>Факултет по математика и информатика</faculty>
+				<faculty>Факултет по природни науки</faculty>
+				<faculty>Педагогически факултет</faculty>
+				<faculty>Факултет по технически науки</faculty>
 			</listOfFaculties>
 			<listOfBranches>
-				<branch>asdfjk</branch>
+				<branch>Колеж - Добрич</branch>
 			</listOfBranches>
 			<listOfDepartments>
-				<department>asdfjk</department>
+				<department>Департамент за информация, квалификация и продължаващо образование - Варна</department>
 			</listOfDepartments>
 		</university>
-
 	</universities>
 
+	<!-- regions -->
 	<regions>
 		<region>
 			<regionName>Североизточен регион</regionName>
