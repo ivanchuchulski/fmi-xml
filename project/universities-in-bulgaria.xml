@@ -410,6 +410,72 @@
 			</listOfDepartments>
 		</university>
 
+		<!-- НБУ -->
+		<university univId="uni12">
+			<univDetails>
+				<name>Нов български университет - София</name>
+				<yearFounded>1991</yearFounded>
+				<!-- <univImage source="asdfjk"></univImage> -->
+				<rectorName>Проф. д-р Пламен Бочков</rectorName>
+				<numberOfStudents>10000</numberOfStudents>
+				<numberOfBachPrograms>50</numberOfBachPrograms>
+				<numberOfMstPrograms>100</numberOfMstPrograms>
+				<numberOfPhDPrograms>35</numberOfPhDPrograms>
+			</univDetails>
+			<univContacts>
+				<location regionIDRef="BG41">
+					<city>София</city>
+					<street>ул. "Монтевидео" 21, 1618 ж.к. Овча купел 2</street>
+				</location>
+				<postalCode>1618</postalCode>
+				<phone>02 8 110 110</phone>
+				<webSite href="www.nbu.bg">www.nbu.bg</webSite>
+				<email mailAddress="ealexandrova@nbu.bg">ealexandrova@nbu.bg</email>
+			</univContacts>
+			<programsAccreditation>
+				<program>
+					<programName>Администрация и управление</programName>
+					<accreditationScore>8.31</accreditationScore>
+				</program>
+				<program>
+					<programName>Архитектура, строителство и геодезия</programName>
+					<accreditationScore>8.01</accreditationScore>
+				</program>
+				<program>
+					<programName>Биологически науки</programName>
+					<accreditationScore>7.61</accreditationScore>
+				</program>
+				<program>
+					<programName>Изобразително изкуство</programName>
+					<accreditationScore>9.16</accreditationScore>
+				</program>
+				<program>
+					<programName>Икономика</programName>
+					<accreditationScore>8.52</accreditationScore>
+				</program>
+				<program>
+					<programName>Информатика и компютърни науки</programName>
+					<accreditationScore>9.25</accreditationScore>
+				</program>
+				<program>
+					<programName>История и археология</programName>
+					<accreditationScore>9.10</accreditationScore>
+				</program>
+			</programsAccreditation>
+			<listOfFaculties>
+				<faculty>Факултет за базово образование</faculty>
+				<faculty>Бакалавърски факултет</faculty>
+				<faculty>Магистърски факултет</faculty>
+				<faculty>Факултет за дистанционно, електронно и надграждащо обучение</faculty>
+			</listOfFaculties>
+			<listOfBranches>
+				<branch>asdfjk</branch>
+			</listOfBranches>
+			<listOfDepartments>
+				<department>asdfjk</department>
+			</listOfDepartments>
+		</university>
+
 		<!-- template -->
 		<university univId="asdfjk">
 			<univDetails>
