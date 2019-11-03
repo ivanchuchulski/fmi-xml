@@ -366,6 +366,51 @@
 		</university>
 
 		<!-- template -->
+		<university univId="uni7">
+			<univDetails>
+				<name>Национална музикална академия "Проф. Панчо Владигеров" - София</name>
+				<yearFounded>1921</yearFounded>
+				<!-- <univImage source="asdfjk"></univImage> -->
+				<rectorName>проф. Димитър Цанев</rectorName>
+				<numberOfStudents>asdfjk</numberOfStudents>
+				<numberOfBachPrograms>33</numberOfBachPrograms>
+				<numberOfMstPrograms>56</numberOfMstPrograms>
+				<numberOfPhDPrograms>2</numberOfPhDPrograms>
+			</univDetails>
+			<univContacts>
+				<location regionIDRef="BG41 ">
+					<city>София</city>
+					<street>бул. "Евлоги и Христо Георгиеви" №94</street>
+				</location>
+				<postalCode>1505</postalCode>
+				<phone>02 4409 740</phone>
+				<webSite href="www.nma.bg">www.nma.bg</webSite>
+				<email mailAddress="kabal@nma.bg">kabal@nma.bg</email>
+			</univContacts>
+			<programsAccreditation>
+				<program>
+					<programName>Музикално и танцово изкуство</programName>
+					<accreditationScore>9.42</accreditationScore>
+				</program>
+				<program>
+					<programName>Педагогика</programName>
+					<accreditationScore>8.52</accreditationScore>
+				</program>
+			</programsAccreditation>
+			<listOfFaculties>
+				<faculty>Теоретико‐композиторски и диригентски факултет</faculty>
+				<faculty>Инструментален факултет</faculty>
+				<faculty>Вокален факултет</faculty>
+			</listOfFaculties>
+			<listOfBranches>
+				<branch>asdfjk</branch>
+			</listOfBranches>
+			<listOfDepartments>
+				<department>asdfjk</department>
+			</listOfDepartments>
+		</university>
+
+		<!-- template -->
 		<university univId="asdfjk">
 			<univDetails>
 				<name>asdfjk</name>
@@ -375,6 +420,7 @@
 				<numberOfStudents>asdfjk</numberOfStudents>
 				<numberOfBachPrograms>asdfjk</numberOfBachPrograms>
 				<numberOfMstPrograms>asdfjk</numberOfMstPrograms>
+				<numberOfPhDPrograms>asdfjk</numberOfPhDPrograms>
 			</univDetails>
 			<univContacts>
 				<location regionIDRef="asdfjk">
