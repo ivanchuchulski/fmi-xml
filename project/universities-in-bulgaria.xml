@@ -201,6 +201,77 @@
 			</listOfDepartments>
 		</university>
 
+		<!-- Великотърновски -->
+		<university univId="uni4">
+			<univDetails>
+				<name>Великотърновски университет "Св. св. Кирил и Методий"</name>
+				<yearFounded>1963</yearFounded>
+				<!-- <univImage source="asdfjk"></univImage> -->
+				<rectorName>проф. д-р Христо Бонджолов</rectorName>
+				<numberOfStudents>14 200</numberOfStudents>
+				<numberOfBachPrograms>64</numberOfBachPrograms>
+				<numberOfMstPrograms>45</numberOfMstPrograms>
+			</univDetails>
+			<univContacts>
+				<location regionIDRef="BG32">
+					<city>Велико Търново</city>
+					<street>"Теодосий Търновски" 2</street>
+				</location>
+				<postalCode>5003</postalCode>
+				<phone>	062/628023</phone>
+				<webSite href="	www.uni-vt.bg">	www.uni-vt.bg</webSite>
+				<email mailAddress="mbox@uni-vt.bg">mbox@uni-vt.bg</email>
+			</univContacts>
+			<programsAccreditation>
+				<program>
+					<programName>Администрация и управление</programName>
+					<accreditationScore>8.53</accreditationScore>
+				</program>
+				<program>
+					<programName>Изобразително изкуство</programName>
+					<accreditationScore>9.23</accreditationScore>
+				</program>
+				<program>
+					<programName>Информатика и компютърни науки</programName>
+					<accreditationScore>9.06</accreditationScore>
+				</program>
+				<program>
+					<programName>История и археология</programName>
+					<accreditationScore>9.52</accreditationScore>
+				</program>
+				<program>
+					<programName>Математика</programName>
+					<accreditationScore>8.58</accreditationScore>
+				</program>
+				<program>
+					<programName>Науки за земята</programName>
+					<accreditationScore>9.03</accreditationScore>
+				</program>
+				<program>
+					<programName>Национална сигурност</programName>
+					<accreditationScore>8.67</accreditationScore>
+				</program>
+			</programsAccreditation>
+			<listOfFaculties>
+				<faculty>Филологически факултет</faculty>
+				<faculty>Исторически факултет</faculty>
+				<faculty>Юридически факултет</faculty>
+				<faculty>Педагогически факултет</faculty>
+				<faculty>Стопански факултет</faculty>
+				<faculty>Философски факултет</faculty>
+				<faculty>Факултет по матемакита и информатика</faculty>
+				<faculty>Православен факултет</faculty>
+				<faculty>Факултет по изобразително изкуство</faculty>
+			</listOfFaculties>
+			<listOfBranches>
+				<branch>Филиал Враца</branch>
+				<branch>Педагогически колеж Плевен</branch>
+			</listOfBranches>
+			<listOfDepartments>
+				<department>Департамент за езиково обучение</department>
+			</listOfDepartments>
+		</university>
+
 
 		<!-- template -->
 		<university univId="asdfjk">
