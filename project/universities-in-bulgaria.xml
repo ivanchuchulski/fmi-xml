@@ -476,6 +476,79 @@
 			</listOfDepartments>
 		</university>
 
+		<!-- ПУ -->
+		<university univId="uni9">
+			<univDetails>
+				<name>Пловдивски университет "Паисий Хилендарски"</name>
+				<yearFounded>1962</yearFounded>
+				<!-- <univImage source="asdfjk"></univImage> -->
+				<rectorName>проф. д-р Румен Младенов</rectorName>
+				<numberOfStudents>16700</numberOfStudents>
+				<numberOfBachPrograms>64</numberOfBachPrograms>
+				<numberOfMstPrograms>40</numberOfMstPrograms>
+				<numberOfPhDPrograms>24</numberOfPhDPrograms>
+			</univDetails>
+			<univContacts>
+				<location regionIDRef="BG42">
+					<city>Пловдив</city>
+					<street>ул. "Цар Асен" 24</street>
+				</location>
+				<postalCode>4000</postalCode>
+				<phone>032 261 261</phone>
+				<webSite href="www.uni-plovdiv.bg">www.uni-plovdiv.bg</webSite>
+				<email mailAddress="www.poshta.uni-plovdiv.bg">www.poshta.uni-plovdiv.bg</email>
+			</univContacts>
+			<programsAccreditation>
+				<program>
+					<programName>Администрация и управление</programName>
+					<accreditationScore>8.86</accreditationScore>
+				</program>
+				<program>
+					<programName>Биологически науки</programName>
+					<accreditationScore>9.41</accreditationScore>
+				</program>
+				<program>
+					<programName>Биотехнологии</programName>
+					<accreditationScore>4.00</accreditationScore>
+				</program>
+				<program>
+					<programName>Електротехника, електроника и автоматика</programName>
+					<accreditationScore>4.00</accreditationScore>
+				</program>
+				<program>
+					<programName>Изобразително изкуство</programName>
+					<accreditationScore>8.29</accreditationScore>
+				</program>
+				<program>
+					<programName>Икономика</programName>
+					<accreditationScore>9.00</accreditationScore>
+				</program>
+				<program>
+					<programName>Информатика и компютърни науки</programName>
+					<accreditationScore>9.18</accreditationScore>
+				</program>
+			</programsAccreditation>
+			<listOfFaculties>
+				<faculty>Биологически факултет</faculty>
+				<faculty>Факултет Икономически и социални науки</faculty>
+				<faculty>Факултет по математика и информатика</faculty>
+				<faculty>Педагогически факултет</faculty>
+				<faculty>Физико-технологичен факултет</faculty>
+				<faculty>Филологически факултет</faculty>
+				<faculty>Философско-исторически факултет</faculty>
+				<faculty>Химически факултет</faculty>
+				<faculty>Юридически факултет</faculty>
+			</listOfFaculties>
+			<listOfBranches>
+				<branch>Филиал – Смолян</branch>
+				<branch>Филиал – Кърджали</branch>
+			</listOfBranches>
+			<listOfDepartments>
+				<department>Департаментът за езикова и специализирана подготовка на чуждестранни студенти</department>
+				<department>Департамент за квалификация и професионално развитие на педагогическите специалисти</department>
+			</listOfDepartments>
+		</university>
+
 		<!-- template -->
 		<university univId="asdfjk">
 			<univDetails>
