@@ -549,6 +549,75 @@
 			</listOfDepartments>
 		</university>
 
+		<!-- Русенски -->
+		<university univId="uni10">
+			<univDetails>
+				<name>Русенски университет "Ангел Кънчев"</name>
+				<yearFounded>1946</yearFounded>
+				<!-- <univImage source="asdfjk"></univImage> -->
+				<rectorName>проф. Христо Белоев</rectorName>
+				<numberOfStudents>11000</numberOfStudents>
+				<numberOfBachPrograms>50</numberOfBachPrograms>
+				<numberOfMstPrograms>80</numberOfMstPrograms>
+				<numberOfPhDPrograms>43</numberOfPhDPrograms>
+			</univDetails>
+			<univContacts>
+				<location regionIDRef="BG32">
+					<city>Русе</city>
+					<street>ул. „Студентска“ 8, 7017 ж.к. Студентски град</street>
+				</location>
+				<postalCode>7017</postalCode>
+				<phone>082 888 465</phone>
+				<webSite href="www.uni-ruse.bg">www.uni-ruse.bg</webSite>
+				<email mailAddress="secretary@uni-ruse.bg">secretary@uni-ruse.bg</email>
+			</univContacts>
+			<programsAccreditation>
+				<program>
+					<programName>Електротехника, електроника и автоматика</programName>
+					<accreditationScore>8.46</accreditationScore>
+				</program>
+				<program>
+					<programName>Здравни грижи</programName>
+					<accreditationScore>8.28</accreditationScore>
+				</program>
+				<program>
+					<programName>Икономика</programName>
+					<accreditationScore>9.12</accreditationScore>
+				</program>
+				<program>
+					<programName>Информатика и компютърни науки</programName>
+					<accreditationScore>9.28</accreditationScore>
+				</program>
+				<program>
+					<programName>Комуникационна и компютърна техника</programName>
+					<accreditationScore>9.36</accreditationScore>
+				</program>
+				<program>
+					<programName>Математика</programName>
+					<accreditationScore>9.37</accreditationScore>
+				</program>
+				<program>
+					<programName>Материали и материалознание</programName>
+					<accreditationScore>8.72</accreditationScore>
+				</program>
+			</programsAccreditation>
+			<listOfFaculties>
+				<faculty>Аграрно-индустриален факултет</faculty>
+				<faculty>Машиннотехнологичен факултет</faculty>
+				<faculty>Факултет Електротехника, електроника и автоматика</faculty>
+				<faculty>Транспортен факултет</faculty>
+				<faculty>Факултет Бизнес и мениджмънт</faculty>
+				<faculty>Факултет Природни науки и образование</faculty>
+				<faculty>Юридически факултет</faculty>
+				<faculty>Факултет Обществено здраве</faculty>
+			</listOfFaculties>
+			<listOfBranches>
+				<branch>Филиал Разград</branch>
+				<branch>Филиал Силистра</branch>
+				<branch>Филиал Видин</branch>
+			</listOfBranches>
+		</university>
+
 		<!-- template -->
 		<university univId="asdfjk">
 			<univDetails>
