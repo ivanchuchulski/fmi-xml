@@ -618,6 +618,72 @@
 			</listOfBranches>
 		</university>
 
+		<!-- УНСС -->
+		<university univId="uni11">
+			<univDetails>
+				<name>Университет за национално и световно стопанство - София</name>
+				<yearFounded>1920</yearFounded>
+				<!-- <univImage source="asdfjk"></univImage> -->
+				<rectorName>проф. Стати Статев</rectorName>
+				<numberOfStudents>21 272 </numberOfStudents>
+				<numberOfBachPrograms>43</numberOfBachPrograms>
+				<numberOfMstPrograms>108</numberOfMstPrograms>
+				<numberOfPhDPrograms>35</numberOfPhDPrograms>
+			</univDetails>
+			<univContacts>
+				<location regionIDRef="BG41">
+					<city>София</city>
+					<street>ул. "8-ми декември"</street>
+				</location>
+				<postalCode>1700</postalCode>
+				<phone>02 8195 211</phone>
+				<webSite href="www.unwe.bg">www.unwe.bg</webSite>
+				<email mailAddress="anaiva@unwe.bg">anaiva@unwe.bg</email>
+			</univContacts>
+			<programsAccreditation>
+				<program>
+					<programName>Администрация и управление</programName>
+					<accreditationScore>9.83</accreditationScore>
+				</program>
+				<program>
+					<programName>Икономика</programName>
+					<accreditationScore>9.88</accreditationScore>
+				</program>
+				<program>
+					<programName>Обществени комуникации и информационни науки</programName>
+					<accreditationScore>9.42</accreditationScore>
+				</program>
+				<program>
+					<programName>Политически науки</programName>
+					<accreditationScore>9.06</accreditationScore>
+				</program>
+				<program>
+					<programName>Право</programName>
+					<accreditationScore>9.19</accreditationScore>
+				</program>
+				<program>
+					<programName>Социология, антропология и науки за културата</programName>
+					<accreditationScore>9.03</accreditationScore>
+				</program>
+			</programsAccreditation>
+			<listOfFaculties>
+				<faculty>Общоикономически факултет</faculty>
+				<faculty>Бизнес факултет</faculty>
+				<faculty>Факултет Управление и администрация</faculty>
+				<faculty>Финансово-счетоводен факултет</faculty>
+				<faculty>Факултет Икономика и инфраструктура</faculty>
+				<faculty>Факултет Международна икономика и политика</faculty>
+				<faculty>Юридически факултет</faculty>
+				<faculty>Факултет приложна математика и статистика</faculty>
+			</listOfFaculties>
+			<listOfBranches>
+				<branch>Регионален център за дистанционно обучение - Хасково</branch>
+			</listOfBranches>
+			<listOfDepartments>
+				<department>Отделение Институт за следдипломна квалификация</department>
+			</listOfDepartments>
+		</university>
+
 		<!-- template -->
 		<university univId="asdfjk">
 			<univDetails>
