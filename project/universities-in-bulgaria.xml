@@ -330,6 +330,41 @@
 			</listOfDepartments>
 		</university>
 
+		<!-- НАТФИЗ -->
+		<university univId="univ6">
+			<univDetails>
+				<name>Национална академия за театрално и филмово изкуство "Кръстьо Сарафов" - София</name>
+				<yearFounded>	1948</yearFounded>
+				<!-- <univImage source="asdfjk"></univImage> -->
+				<rectorName>проф. д-р Станислав Семерджиев</rectorName>
+				<numberOfStudents>600</numberOfStudents>
+				<numberOfBachPrograms>24</numberOfBachPrograms>
+				<numberOfMstPrograms>20</numberOfMstPrograms>
+				<numberOfPhDPrograms>4</numberOfPhDPrograms>
+			</univDetails>
+			<univContacts>
+				<location regionIDRef="BG41">
+					<city>София</city>
+					<street>ул. "Георги С.Раковски" № 108А</street>
+				</location>
+				<postalCode>1000</postalCode>
+				<phone>02 923 1225</phone>
+				<webSite href="	www.natfiz.bg">	www.natfiz.bg</webSite>
+				<email mailAddress="rector.office@natfiz.bg">rector.office@natfiz.bg</email>
+			</univContacts>
+			<programsAccreditation>
+				<program>
+					<programName>Театрално и филмово изкуство</programName>
+					<accreditationScore>9.27</accreditationScore>
+				</program>
+			</programsAccreditation>
+			<listOfFaculties>
+				<faculty>Сценични изкуства</faculty>
+				<faculty>Екранни изкуства</faculty>
+				<faculty>asdfjk</faculty>
+			</listOfFaculties>
+		</university>
+
 		<!-- template -->
 		<university univId="asdfjk">
 			<univDetails>
