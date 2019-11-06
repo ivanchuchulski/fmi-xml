@@ -1,0 +1,18 @@
+<!-- 1 -->
+for $iterator in catalog/cd/tracklist
+where $iterator/@num = '1'
+return $iterator/track
+
+
+<!-- 2 -->
+element records
+{
+for $o in catalog/cd
+return
+   element record {
+     attribute cd_ID {$o/@id}, attribute artist {$o/artist},
+     element info {
+       text { "Title:"}, text {$o/title}, text { ", Year:"} ,text{$o/year}, text { ", Track numbers:"}, text{count($o/tracklist/track)}
+     }
+   }
+}
