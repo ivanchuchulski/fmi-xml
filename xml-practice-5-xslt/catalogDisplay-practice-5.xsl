@@ -40,19 +40,19 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
          <!-- big string -->
          <xsl:when test="string-length(.) &gt; 15">
             <li>
-              <xsl:value-of select="."/> : big string
+				big string : <xsl:value-of select="."/> 
             </li>         
          </xsl:when>
          <!-- small string -->
          <xsl:when test="string-length(.) &lt; 15">
             <li>
-              <xsl:value-of select="."/> : small string
+				small string : <xsl:value-of select="."/>
             </li>         
          </xsl:when>
          <!-- medium string -->
          <xsl:otherwise>
             <li>
-               <xsl:value-of select="."/> : medium string
+				medium string : <xsl:value-of select="."/> 
             </li>
          </xsl:otherwise>
       </xsl:choose>
