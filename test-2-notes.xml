@@ -95,7 +95,35 @@ qualified name = prefix:local_name,
 	EntityReference
 	ProcessingInstruction
 
-->SAX, STAX
+->SAX тип push, при срещане на елемени подава събития
+основен интерфейс на SAX 1
+	DocumentHandler :  управление на събитията за съдържанието на документа, не поддържа namespaces, сега е deprecated
+		събития - StartDocument, EndDocument, StartElement, EndElement, Characters
+	Parser – интерфейс за четене на XML документ с използване на callbacks, deprecated
+
+основен интерфейс на SAX 2
+	ContentHandler : поддържа namespaces
+		-събития - StartDocument, EndDocument, StartElement, EndElement, Characters
+		-DefaultHandler е имплементация с празни методи
+
+	XMLReader – интерфейс за четене на XML документ с използване на callbacks
+		позволява на приложението може да регистрира нов (различен)
+		handler в процеса на парсване и от този момент SAX парсерът
+		започна да го използва, например за dtd събития или error handler, entity-та и т.н.
+
+->STAX
+2 интерфейса
+	Cursor API : представлява курсор, с които можем да се разхождаме по XML документ от началото до края.
+		Курсорът сочи една конструкция в даден момент и винаги се движи напред.
+		-XMLStreamReader, XMLStreamWriter
+
+	Iterator API : представя XML документния поток като набор от дискретни обекти-събития. Тези
+		събития се извличат от приложението чрез парсера в реда, в който се четат във входния XML документ.
+		-XMLEventReader, XMLEventWriter
+
+
+
+
 
 
 
