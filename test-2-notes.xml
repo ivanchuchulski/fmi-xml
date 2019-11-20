@@ -1,0 +1,102 @@
+
+qualified name = prefix:local_name, 
+	prefix is URI
+
+->XPath
+	logical operators in predicates [...]
+		and, or, not
+
+->XSL
+	<xsl:value-of select="."/> избира контекстния възел и всички негови наследници, 
+		докато text() избира само контектния възел
+		<xsl:value-of select="people/person/@age"/> може да се селектира и атрибут
+		<xsl:value-of select='.' name="pref1:templ1" priority='0.5' mode='?'/>
+			The name attribute fully identifies a template and there cannot be two templates with the same name and different modes.
+			The mode attribute allows the same nodes to be processed more than once, using different modes.
+			т.е. mode е подобно на име и позволява да се избире конкретен шаблон при дадени условия
+	<xsl:output> : позволява контрол над изходния документ, разполага се след маркера <xsl:stylesheet> в xsl файла
+	<xsl:template match="/">
+	<xsl:apply-templates select='xpath_expression'>
+	<xsl:param> : параметър на шаблон
+	<xsl:variable> : променлива с scope 
+		достъпва се с $parameter_name
+	<xsl:call-template name="template_to_be_called">
+	<xsl:with-param select="parameter"> : низови литерали и атрибути може да бъдат подавани като параметри
+
+	<xsl:element name="elementName{$variable}">
+
+	<xsl:attribute name="attr_name">attribute_value</xsl:attribute> : създаване на атрибут 
+	<xsl:attribute-set> <xsl:attribute>sda</xsl:attribute> ... </xsl:attribute-set> : мн-во от атрибути за използване при копиране напр
+
+	<xsl:copy> ... </xsl:copy> копира контекстния възел без атрибути и наследници
+		<xsl:copy use-attribute-sets="attribute_set_name"> ... </xsl:copy>
+	<xsl:copy-of select='//path'> : копиране с атрибути и наследници
+
+	<xsl:for-each select='//path'> :цикъл по всички елементи от xpath израза
+	<xsl:if test='position() mod 2 == 0'>
+		actions
+	</xsl:if> : условие
+
+	няколко условия
+	<xsl:choose>
+		<xsl:when test="position() > 1">
+			actions
+		</xsl:when>
+		<xs:when test="position() = 1 and salary[number(.) &gt; 1000]">
+			actions
+		</xs:when>
+		<xsl:otherwise>
+			actions
+		</xsl:otherwise>
+	</xsl:choose>
+
+	сортиране, използва се като поделемент на <xsl:apply-templates> или на <xsl:for-each>
+	<xsl:sort select='//path' data-type='number' order='ascendind'>
+
+	<xsl:include href='uri-reference'/> : внасяне на стилове като не се разрешава отменяне на стилове помежду си
+	<xsl:import href='uri-reference'> : внасяне на стилове като е позволено стилове да се отменят помежду си,
+		импортраните документи са с по-нисък приоритет
+
+	функции
+	<xsl:function name="my_func" as="xs:string">
+		<xsl:param name="first_param" as="xs:string"/>
+		actions
+	</xsl:function>
+	
+	<xsl:value-of select='my_func(argument)'/>
+
+->DOM
+базови интерфейси
+	Document : представя целия xml документ, често се представя като DOM дърво
+	DocumentFragment : фрагмент от Document за временно съхранение
+	DOMImplementation : за определяне на нивото на поддръжка на парсера
+	DOMException
+		 NOT_FOUND_ERR - Опит да се получи референция към възел, който не съществува в контекста
+		 DOMSTRING_SIZE_ERR - Опит да се специфицира част от текст с некоректни граници
+		 HIERARCHY_REQUEST_ERR - Опит да се вмъкне възел на неподходящо място в йерархията на DOM дървото
+		 INDEX_SIZE_ERR -  Опит да се достъпи отрицателен индекс или индекс, който е по-голям от допустимата стойност
+		 NOT_SUPPORTED_ERR - Опит да се достъпи обект,чийто тип не се поддържа от имплементация
+
+	Node : базов тип на DOM
+	NodeList : подредена колекция от възли
+	NamedNodeMap : неподредена колекция от възли
+	
+	Element : представя елемент, не различават стойност по подразбиране зададена в dtd от тази в документа
+	Attr : представя атрибут
+	Text : представя текстово съдържание
+	Comments : представя коментари
+	CharacterData : методи за текстообработка
+
+разширени интерфейси
+	DocumentType : информация за съдържанието на DTD, напр име, списък с нотации или единици 
+	CDATASection
+	Notation
+	Entity
+	EntityReference
+	ProcessingInstruction
+
+->SAX, STAX
+
+
+
+
