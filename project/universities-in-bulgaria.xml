@@ -330,7 +330,7 @@
 		</university>
 
 		<!-- НАТФИЗ -->
-		<university univId="univ6">
+		<university univId="uni6">
 			<univDetails>
 				<name>Национална академия за театрално и филмово изкуство "Кръстьо Сарафов" - София</name>
 				<yearFounded>	1948</yearFounded>
@@ -410,7 +410,7 @@
 		</university>
 
 		<!-- НБУ -->
-		<university univId="uni12">
+		<university univId="uni8">
 			<univDetails>
 				<name>Нов български университет - София</name>
 				<yearFounded>1991</yearFounded>
