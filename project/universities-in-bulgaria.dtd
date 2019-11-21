@@ -5,10 +5,10 @@
  -->
 
 
-<!DOCTYPE universitiesInBulgaria [ 
+<!--<!DOCTYPE universitiesInBulgaria [ -->
 <!ELEMENT universitiesInBulgaria (universities, regions)>
 	<!ELEMENT universities (university+)>
-		<!ELEMENT university (univDetails, univContacts, programAccreditation, listOfFaculties, listOfBranches?, listOfDepartments?)>		
+		<!ELEMENT university (univDetails, univContacts, programsAccreditation, listOfFaculties, listOfBranches?, listOfDepartments?)>		
 			<!ELEMENT univDetails (name, yearFounded, univImage, rectorName, 
 									numberOfStudents, numberOfBachPrograms?, numberOfMstPrograms?, numberOfPhDPrograms?)>
 		 		<!ELEMENT name (#PCDATA)>
@@ -20,7 +20,7 @@
 		 		<!ELEMENT numberOfMstPrograms (#PCDATA)>
 		 		<!ELEMENT numberOfPhDPrograms (#PCDATA)>
 
-		 	<!ELEMENT univContacts (location, phone, webSite, email)>
+		 	<!ELEMENT univContacts (location, postalCode, phone, webSite, email)>
 				<!ELEMENT location (city, street)>
 					<!ELEMENT city (#PCDATA)>
 					<!ELEMENT street (#PCDATA)>
@@ -66,4 +66,4 @@
 <!-- entities -->
 <!ENTITY su SYSTEM "university-images/su.jpg" NDATA jpg>
 
-]>
+<!--]>-->
