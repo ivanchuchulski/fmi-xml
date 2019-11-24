@@ -93,8 +93,8 @@
 					<street>площад "Г.Измирлиев- Македончето" 1</street>
 				</location>
 				<postalCode>2700</postalCode>
-				<phone>073 888307</phone>
-				<webSite href="www.aubg.edu/">www.aubg.edu</webSite>
+				<phone>073 888 307</phone>
+				<webSite href="www.aubg.edu">www.aubg.edu</webSite>
 				<email mailAddress="registrar@aubg.edu">registrar@aubg.edu</email>
 			</univContacts>
 			<programsAccreditation>
@@ -128,9 +128,9 @@
 				</program>
 			</programsAccreditation>
 			<listOfFaculties>
-				<faculty>академичен център "Балкански"</faculty>
-				<faculty>библиотека "Паница"</faculty>
-				<faculty>студентски център "Америка за България"</faculty>
+				<faculty>Академичен център "Балкански"</faculty>
+				<faculty>Библиотека "Паница"</faculty>
+				<faculty>Студентски център "Америка за България"</faculty>
 			</listOfFaculties>
 			<listOfBranches>
 				<branch>АУБ филиал в "Илиев център" - София</branch>
@@ -153,7 +153,7 @@
 					<street>ул. "Янко Славчев" №84, 9007 Чайка</street>
 				</location>
 				<postalCode>9000</postalCode>
-				<phone>052/359506</phone>
+				<phone>052 359 506</phone>
 				<webSite href="www.vfu.bg">www.vfu.bg</webSite>
 				<email mailAddress="rector@vfu.bg">rector@vfu.bg</email>
 			</univContacts>
@@ -214,11 +214,11 @@
 			<univContacts>
 				<location regionIDRef="BG32">
 					<city>Велико Търново</city>
-					<street>"Теодосий Търновски" 2</street>
+					<street>ул. "Теодосий Търновски" 2</street>
 				</location>
 				<postalCode>5003</postalCode>
-				<phone>	062/628023</phone>
-				<webSite href="	www.uni-vt.bg">	www.uni-vt.bg</webSite>
+				<phone>062 628 023</phone>
+				<webSite href="www.uni-vt.bg">www.uni-vt.bg</webSite>
 				<email mailAddress="mbox@uni-vt.bg">mbox@uni-vt.bg</email>
 			</univContacts>
 			<programsAccreditation>
@@ -322,7 +322,7 @@
 				<faculty>Факултет по обществено здраве</faculty>
 			</listOfFaculties>
 			<listOfBranches>
-				<branch>Филиал „Проф. д-р Иван Митев” - Враца </branch>
+				<branch>Филиал "Проф. д-р Иван Митев" - Враца </branch>
 			</listOfBranches>
 			<listOfDepartments>
 				<department>Департамент по езиково обучение и студентски спорт</department>
@@ -333,7 +333,7 @@
 		<university univId="uni6">
 			<univDetails>
 				<name>Национална академия за театрално и филмово изкуство "Кръстьо Сарафов" - София</name>
-				<yearFounded>	1948</yearFounded>
+				<yearFounded>1948</yearFounded>
 				<!-- <univImage source="asdfjk"></univImage> -->
 				<rectorName>проф. д-р Станислав Семерджиев</rectorName>
 				<numberOfStudents>600</numberOfStudents>
@@ -348,7 +348,7 @@
 				</location>
 				<postalCode>1000</postalCode>
 				<phone>02 923 1225</phone>
-				<webSite href="	www.natfiz.bg">	www.natfiz.bg</webSite>
+				<webSite href="www.natfiz.bg">www.natfiz.bg</webSite>
 				<email mailAddress="rector.office@natfiz.bg">rector.office@natfiz.bg</email>
 			</univContacts>
 			<programsAccreditation>
@@ -377,7 +377,7 @@
 				<numberOfPhDPrograms>2</numberOfPhDPrograms>
 			</univDetails>
 			<univContacts>
-				<location regionIDRef="BG41 ">
+				<location regionIDRef="BG41">
 					<city>София</city>
 					<street>бул. "Евлоги и Христо Георгиеви" №94</street>
 				</location>
@@ -401,12 +401,6 @@
 				<faculty>Инструментален факултет</faculty>
 				<faculty>Вокален факултет</faculty>
 			</listOfFaculties>
-			<listOfBranches>
-				<branch>asdfjk</branch>
-			</listOfBranches>
-			<listOfDepartments>
-				<department>asdfjk</department>
-			</listOfDepartments>
 		</university>
 
 		<!-- НБУ -->
@@ -467,12 +461,6 @@
 				<faculty>Магистърски факултет</faculty>
 				<faculty>Факултет за дистанционно, електронно и надграждащо обучение</faculty>
 			</listOfFaculties>
-			<listOfBranches>
-				<branch>asdfjk</branch>
-			</listOfBranches>
-			<listOfDepartments>
-				<department>asdfjk</department>
-			</listOfDepartments>
 		</university>
 
 		<!-- ПУ -->
@@ -563,7 +551,7 @@
 			<univContacts>
 				<location regionIDRef="BG32">
 					<city>Русе</city>
-					<street>ул. „Студентска“ 8, 7017 ж.к. Студентски град</street>
+					<street>ул. "Студентска" 8, 7017 ж.к. Студентски град</street>
 				</location>
 				<postalCode>7017</postalCode>
 				<phone>082 888 465</phone>
