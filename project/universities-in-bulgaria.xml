@@ -1,10 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
 <!-- TODO
 
  -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- xsl reference -->
+<?xml-stylesheet type="text/xsl" href="universities-in-bulgaria.xsl"?>
+
 <!-- outer dtd reference -->
 <!DOCTYPE universitiesInBulgaria SYSTEM "universities-in-bulgaria.dtd">
+
 
 <!-- xml structure -->
 <universitiesInBulgaria>
@@ -14,7 +17,7 @@
 			<univDetails>
 				<name>Софийски университет "Св. Климент Охридски"</name>
 				<yearFounded>1888</yearFounded>
-				<univImage source="su"></univImage>
+				<univImage source="university-pictures/su.gif"></univImage>
 				<rectorName>проф. дфн Анастас Герджиков</rectorName>
 				<numberOfStudents>24000</numberOfStudents>
 				<numberOfBachPrograms>117</numberOfBachPrograms>
