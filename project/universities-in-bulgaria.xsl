@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <xsl:stylesheet version="1.0" 
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
-    xmlns:fo="http://www.w3.org/1999/XSL/Format">
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+                xmlns:fo="http://www.w3.org/1999/XSL/Format">
 <xsl:output method="xml" version="1.0" indent="yes"/>
 
 <xsl:template match="/">
@@ -45,7 +45,7 @@
     -->
 
     <!-- sofia university part 1 -->		
-    <fo:page-sequence master-reference="page">
+    <fo:page-sequence master-reference="unicatalog">
         <fo:flow flow-name="xsl-region-body">
             <fo:block-container position ="absolute" top="-2.5cm" left = "-2.5cm">
                 <!-- uni name -->
@@ -110,7 +110,7 @@
                 <!-- web site -->
                 <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="15pt" color="black" 
                 padding-before="5mm" margin-left="2cm">
-                    Телефон за връзка : 
+                    Уеб сайт : 
                     <fo:inline position="relative" padding-left="25mm" font-weight="normal" font-size="14pt">
                         <xsl:value-of select="//university[@univId='uni1']/univContacts/webSite/@href"></xsl:value-of> 
                     </fo:inline>
@@ -119,7 +119,7 @@
                 <!-- email -->
                 <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="15pt" color="black" 
                 padding-before="5mm" margin-left="2cm">
-                    Телефон за връзка : 
+                    Имейл : 
                     <fo:inline position="relative" padding-left="25mm" font-weight="normal" font-size="14pt">
                         <xsl:value-of select="//university[@univId='uni1']/univContacts/email/@mailAddress"></xsl:value-of> 
                     </fo:inline>
@@ -127,8 +127,8 @@
             </fo:block-container>
         </fo:flow>
     </fo:page-sequence>
-
-    <!-- sofia university 2 part -->
+<!-- 
+    sofia university 2 part
     <fo:page-sequence master-reference="page">
         <fo:flow flow-name="xsl-region-body">
             <fo:block-container position ="absolute" top="-2.5cm" left = "-2.5cm">					
@@ -156,7 +156,7 @@
         </fo:flow>
     </fo:page-sequence>
 
-    <!-- sofia uviversity 3 part -->
+    sofia uviversity 3 part
     <fo:page-sequence master-reference="page">
         <fo:flow flow-name="xsl-region-body">
             <fo:block-container position ="absolute" top="-2.5cm" left = "-2.5cm">					
@@ -171,10 +171,10 @@
                 
             </fo:block-container>
         </fo:flow>
-    </fo:page-sequence>
+    </fo:page-sequence> -->
 
 
-</fo-root>
+</fo:root>
 </xsl:template>
 
 
@@ -182,3 +182,5 @@
 <xsl:template match="src">
 	<fo:external-graphic src="{unparsed-entity-uri(@href)}" content-height="250" content-width="350"/>
 </xsl:template>
+
+</xsl:stylesheet>
