@@ -17,7 +17,7 @@
 			<univDetails>
 				<name>Софийски университет "Св. Климент Охридски"</name>
 				<yearFounded>1888</yearFounded>
-				<univImage source="university-pictures/su.jpg"></univImage>
+				<univImage source="su"></univImage>
 				<rectorName>проф. дфн Анастас Герджиков</rectorName>
 				<numberOfStudents>24000</numberOfStudents>
 				<numberOfBachPrograms>117</numberOfBachPrograms>
