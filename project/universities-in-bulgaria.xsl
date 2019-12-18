@@ -62,8 +62,8 @@
                 <!-- year founded -->
                 <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="15pt" color="black" 
                 padding-before="5mm" margin-left="2cm">
-                    Година на основаване : 
-                    <fo:inline position="relative" padding-left="5mm" font-weight="normal" font-size="14pt">
+                    Основан през : 
+                    <fo:inline position="relative" padding-left="11mm" font-weight="normal" font-size="14pt">
                         <xsl:value-of select="//university[@univId='uni1']/univDetails/yearFounded"></xsl:value-of> 
                     </fo:inline>
                 </fo:block> 
@@ -72,7 +72,7 @@
                 <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="15pt" color="black" 
                 padding-before="5mm" margin-left="2cm">
                     Ректор : 
-                    <fo:inline position="relative" padding-left="25mm" font-weight="normal" font-size="14pt">
+                    <fo:inline position="relative" padding-left="30mm" font-weight="normal" font-size="14pt">
                         <xsl:value-of select="//university[@univId='uni1']/univDetails/rectorName"></xsl:value-of> 
                     </fo:inline>
                 </fo:block> 
@@ -81,7 +81,7 @@
                 <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="15pt" color="black" 
                 padding-before="5mm" margin-left="2cm">
                     Брой студенти : 
-                    <fo:inline position="relative" padding-left="25mm" font-weight="normal" font-size="14pt">
+                    <fo:inline position="relative" padding-left="9mm" font-weight="normal" font-size="14pt">
                         <xsl:value-of select="//university[@univId='uni1']/univDetails/numberOfStudents"></xsl:value-of> 
                     </fo:inline>
                 </fo:block> 
@@ -90,10 +90,10 @@
                 <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="15pt" color="black" 
                 padding-before="5mm" margin-left="2cm">
                     Адрес :  
-                    <fo:inline position="relative" padding-left="25mm" font-weight="normal" font-size="14pt">
+                    <fo:inline position="relative" padding-left="31mm" font-weight="normal" font-size="14pt">
                         <xsl:value-of select="//university[@univId='uni1']/univContacts/location/city"></xsl:value-of> 
                     </fo:inline>
-                    <fo:inline position="relative" padding-left="25mm" font-weight="normal" font-size="14pt">
+                    <fo:inline position="relative" padding-left="5mm" font-weight="normal" font-size="14pt">
                         <xsl:value-of select="//university[@univId='uni1']/univContacts/location/street"></xsl:value-of> 
                     </fo:inline>
                 </fo:block> 
@@ -101,8 +101,8 @@
                 <!-- phone -->
                 <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="15pt" color="black" 
                 padding-before="5mm" margin-left="2cm">
-                    Телефон за връзка : 
-                    <fo:inline position="relative" padding-left="25mm" font-weight="normal" font-size="14pt">
+                    Телефон : 
+                    <fo:inline position="relative" padding-left="24mm" font-weight="normal" font-size="14pt">
                         <xsl:value-of select="//university[@univId='uni1']/univContacts/phone"></xsl:value-of> 
                     </fo:inline>
                 </fo:block> 
@@ -120,7 +120,7 @@
                 <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="15pt" color="black" 
                 padding-before="5mm" margin-left="2cm">
                     Имейл : 
-                    <fo:inline position="relative" padding-left="25mm" font-weight="normal" font-size="14pt">
+                    <fo:inline position="relative" padding-left="30mm" font-weight="normal" font-size="14pt">
                         <xsl:value-of select="//university[@univId='uni1']/univContacts/email/@mailAddress"></xsl:value-of> 
                     </fo:inline>
                 </fo:block> 
