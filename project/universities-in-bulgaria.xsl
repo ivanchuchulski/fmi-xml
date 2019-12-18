@@ -3,14 +3,13 @@
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
     xmlns:fo="http://www.w3.org/1999/XSL/Format">
 <xsl:output method="xml" version="1.0" indent="yes"/>
+
 <xsl:template match="/">
 <fo:root>
     <fo:layout-master-set>
         <fo:simple-page-master 
-            page-height="297mm"  page-width="210mm"
-            margin="5mm 25mm 5mm 25mm" 
-            master-name="unicatalog">
-            <fo:region-body margin="20mm 0mm 20mm 0mm"/>
+            page-height="297mm" page-width="210mm" margin="5mm 25mm 5mm 25mm" master-name="unicatalog">
+            <fo:region-body margin="20mm 0mm 20mm 0mm"></fo:region-body>
         </fo:simple-page-master>
     </fo:layout-master-set>
 
@@ -23,7 +22,7 @@
                     <fo:block margin-bottom="50mm">
                         Каталог на университетите в България
                     </fo:block>
-                    <fo:external-graphic src="url('images/bulgaria.jpg')" margin-left="5cm" margin-bottom="15mm"></fo:external-graphic>
+                    <!-- <fo:external-graphic src="url('images/bulgaria.jpg')" margin-left="5cm" margin-bottom="15mm"></fo:external-graphic> -->
                 </fo:block>
             </fo:block-container>
         </fo:flow>
@@ -31,8 +30,9 @@
 		
     <!-- for each university do 3 pages -->
     <!-- 1st page : 
+        //university[@univId='uni1']/univDetails/name
         picture 
-        details
+        year founded
         contacts
     -->
     <!-- 2nd page : 
@@ -48,12 +48,15 @@
     <fo:page-sequence master-reference="page">
         <fo:flow flow-name="xsl-region-body">
             <fo:block-container position ="absolute" top="-2.5cm" left = "-2.5cm">
-                <fo:block position="absolute" text-align = "center" padding-before = "12mm" margin-left="2cm" font-family="Monotype Corsiva" font-size="40pt" color="black">
-                    <xsl:value-of select="//hotel[@hotelID='ATLASGS']/hotel_name"/>
+                <!-- uni name -->
+                <fo:block position="absolute" text-align = "center" padding-before = "12mm" margin-left="2cm" 
+                            font-family="Monotype Corsiva" font-size="40pt" color="black">
+                    <xsl:value-of select="//university[@univId='uni1']/univDetails/name"></xsl:value-of>
                 </fo:block>
                 
+                <!-- uni picture -->
                 <fo:block position="absolute" text-align = "center" padding-before = "10mm" margin-left="2cm">
-                    <xsl:apply-templates select="//hotel[@hotelID='ATLASGS']/image/src"/>
+                    <xsl:apply-templates select="//university[@univId='uni1']/univDetails/univImage/source"/>
                 </fo:block>
                 
                 <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="15pt" color="black" 
@@ -169,4 +172,12 @@
         </fo:flow>
     </fo:page-sequence>
 
+
 </fo-root>
+</xsl:template>
+
+
+<!-- template for source images -->
+<xsl:template match="source">
+	<fo:external-graphic src="{unparsed-entity-uri(@href)}" content-height="250" content-width="350"/>
+</xsl:template>
