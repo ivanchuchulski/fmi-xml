@@ -56,71 +56,72 @@
                 
                 <!-- uni picture -->
                 <fo:block position="absolute" text-align = "center" padding-before = "10mm" margin-left="2cm">
-                    <xsl:apply-templates select="//university[@univId='uni1']/univDetails/univImage/source"/>
+                    <xsl:apply-templates select="//university[@univId='uni1']/univDetails/univImage/src"></xsl:apply-templates>
                 </fo:block>
                 
+                <!-- year founded -->
                 <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="15pt" color="black" 
-                padding-before="10mm" margin-left="2cm">
-                    Хотелска верига: 
+                padding-before="5mm" margin-left="2cm">
+                    Година на основаване : 
                     <fo:inline position="relative" padding-left="5mm" font-weight="normal" font-size="14pt">
-                        <xsl:value-of select="//chain[@chainID='A']/chain_name"/> 
+                        <xsl:value-of select="//university[@univId='uni1']/univDetails/yearFounded"></xsl:value-of> 
                     </fo:inline>
                 </fo:block> 
                 
+                <!-- rector -->
                 <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="15pt" color="black" 
                 padding-before="5mm" margin-left="2cm">
-                    Тип хотел: 
+                    Ректор : 
                     <fo:inline position="relative" padding-left="25mm" font-weight="normal" font-size="14pt">
-                        <xsl:value-of select="//hotel[@hotelID='ATLASGS']/hotel_type"/> 
+                        <xsl:value-of select="//university[@univId='uni1']/univDetails/rectorName"></xsl:value-of> 
                     </fo:inline>
                 </fo:block> 
                 
+                <!-- number of students -->
                 <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="15pt" color="black" 
                 padding-before="5mm" margin-left="2cm">
-                    Категория: 
+                    Брой студенти : 
                     <fo:inline position="relative" padding-left="25mm" font-weight="normal" font-size="14pt">
-                        <xsl:value-of select="//hotel[@hotelID='ATLASGS']/category"/> 
+                        <xsl:value-of select="//university[@univId='uni1']/univDetails/numberOfStudents"></xsl:value-of> 
                     </fo:inline>
                 </fo:block> 
 
+                <!-- location -->
                 <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="15pt" color="black" 
                 padding-before="5mm" margin-left="2cm">
-                    Описание: 
-                </fo:block> 
-                
-                <fo:block position="relative" font-family="Arial"  font-size="14pt" color="black" start-indent ="5mm" end-indent="5mm" padding-before="0mm" margin-left="2.5cm" text-align = "justify">
-                    <xsl:value-of select="//hotel[@hotelID='ATLASGS']/description"/> 
-                </fo:block> 
-                
-                <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="15pt" color="black" 
-                padding-before="5mm" margin-left="2cm">
-                    Адрес:
-                    <fo:inline position="relative" padding-left="10mm" font-weight="normal" font-size="14pt">
-                        <xsl:value-of select="//hotel[@hotelID='ATLASGS']/address"/> 
+                    Адрес :  
+                    <fo:inline position="relative" padding-left="25mm" font-weight="normal" font-size="14pt">
+                        <xsl:value-of select="//university[@univId='uni1']/univContacts/location/city"></xsl:value-of> 
+                    </fo:inline>
+                    <fo:inline position="relative" padding-left="25mm" font-weight="normal" font-size="14pt">
+                        <xsl:value-of select="//university[@univId='uni1']/univContacts/location/street"></xsl:value-of> 
                     </fo:inline>
                 </fo:block> 
                 
+                <!-- phone -->
                 <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="15pt" color="black" 
                 padding-before="5mm" margin-left="2cm">
-                    Телефон:
-                    <fo:inline position="relative" padding-left="5mm" font-weight="normal" font-size="14pt">
-                        <xsl:value-of select="//hotel[@hotelID='ATLASGS']/phone"/> 
+                    Телефон за връзка : 
+                    <fo:inline position="relative" padding-left="25mm" font-weight="normal" font-size="14pt">
+                        <xsl:value-of select="//university[@univId='uni1']/univContacts/phone"></xsl:value-of> 
                     </fo:inline>
                 </fo:block> 
-                
+
+                <!-- web site -->
                 <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="15pt" color="black" 
                 padding-before="5mm" margin-left="2cm">
-                    Email:
-                    <fo:inline position="relative" padding-left="15mm" font-weight="normal" font-size="14pt">
-                        <xsl:value-of select="//hotel[@hotelID='ATLASGS']/email"/> 
+                    Телефон за връзка : 
+                    <fo:inline position="relative" padding-left="25mm" font-weight="normal" font-size="14pt">
+                        <xsl:value-of select="//university[@univId='uni1']/univContacts/webSite/@href"></xsl:value-of> 
                     </fo:inline>
                 </fo:block> 
-                
+
+                <!-- email -->
                 <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="15pt" color="black" 
                 padding-before="5mm" margin-left="2cm">
-                    Web Site:
-                    <fo:inline position="relative" padding-left="8mm" font-weight="normal" font-size="14pt">
-                        <xsl:value-of select="//hotel[@hotelID='ATLASGS']/site"/> 
+                    Телефон за връзка : 
+                    <fo:inline position="relative" padding-left="25mm" font-weight="normal" font-size="14pt">
+                        <xsl:value-of select="//university[@univId='uni1']/univContacts/email/@mailAddress"></xsl:value-of> 
                     </fo:inline>
                 </fo:block> 
             </fo:block-container>
@@ -177,7 +178,7 @@
 </xsl:template>
 
 
-<!-- template for source images -->
-<xsl:template match="source">
+<!-- template for images -->
+<xsl:template match="src">
 	<fo:external-graphic src="{unparsed-entity-uri(@href)}" content-height="250" content-width="350"/>
 </xsl:template>
