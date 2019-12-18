@@ -64,6 +64,6 @@
 <!NOTATION jpg PUBLIC "jpg viewer">
 
 <!-- entities -->
-<!ENTITY su SYSTEM "university-images/su.jpg" NDATA jpg>
+<!ENTITY su SYSTEM "university-pictures/su.jpg" NDATA jpg>
 
 <!--]>-->
