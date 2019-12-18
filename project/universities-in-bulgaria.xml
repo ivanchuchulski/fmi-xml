@@ -17,7 +17,9 @@
 			<univDetails>
 				<name>Софийски университет "Св. Климент Охридски"</name>
 				<yearFounded>1888</yearFounded>
-				<univImage source="su"></univImage>
+				<univImage>
+					<src href="su">
+				</univImage>
 				<rectorName>проф. дфн Анастас Герджиков</rectorName>
 				<numberOfStudents>24000</numberOfStudents>
 				<numberOfBachPrograms>117</numberOfBachPrograms>
@@ -84,7 +86,9 @@
 			<univDetails>
 				<name>Американски университет в България - Благоевград</name>
 				<yearFounded>1991</yearFounded>
-				<!-- <univImage source=""></univImage> -->
+				<!-- <univImage>
+					<src href="">
+				</univImage> -->
 				<rectorName>д-р Дейвид Р. Еванс</rectorName>
 				<numberOfStudents>1000</numberOfStudents>
 				<numberOfBachPrograms>14</numberOfBachPrograms>
@@ -145,7 +149,9 @@
 			<univDetails>
 				<name>Варненски свободен университет "Черноризец Храбър</name>
 				<yearFounded>1991</yearFounded>
-				<!-- <univImage source="asdfjk"></univImage> -->
+				<!-- <univImage>
+					<src href="">
+				</univImage> -->
 				<rectorName>проф. д-р Петър Христов</rectorName>
 				<numberOfStudents>8000</numberOfStudents>
 				<numberOfBachPrograms>37</numberOfBachPrograms>
@@ -208,7 +214,9 @@
 			<univDetails>
 				<name>Великотърновски университет "Св. св. Кирил и Методий"</name>
 				<yearFounded>1963</yearFounded>
-				<!-- <univImage source="asdfjk"></univImage> -->
+				<!-- <univImage>
+					<src href="">
+				</univImage> -->
 				<rectorName>проф. д-р Христо Бонджолов</rectorName>
 				<numberOfStudents>14 200</numberOfStudents>
 				<numberOfBachPrograms>64</numberOfBachPrograms>
@@ -279,7 +287,9 @@
 			<univDetails>
 				<name>Медицински университет - София</name>
 				<yearFounded>1917</yearFounded>
-				<!-- <univImage source="asdfjk"></univImage> -->
+				<!-- <univImage>
+					<src href="">
+				</univImage> -->
 				<rectorName>проф. д-р Виктор Златков</rectorName>
 				<numberOfStudents>8311</numberOfStudents>
 				<numberOfBachPrograms>25</numberOfBachPrograms>
@@ -337,7 +347,9 @@
 			<univDetails>
 				<name>Национална академия за театрално и филмово изкуство "Кръстьо Сарафов" - София</name>
 				<yearFounded>1948</yearFounded>
-				<!-- <univImage source="asdfjk"></univImage> -->
+				<!-- <univImage>
+					<src href="">
+				</univImage> -->
 				<rectorName>проф. д-р Станислав Семерджиев</rectorName>
 				<numberOfStudents>600</numberOfStudents>
 				<numberOfBachPrograms>24</numberOfBachPrograms>
@@ -367,14 +379,16 @@
 			</listOfFaculties>
 		</university>
 
-		<!-- template -->
+		<!-- музикална академия -->
 		<university univId="uni7">
 			<univDetails>
 				<name>Национална музикална академия "Проф. Панчо Владигеров" - София</name>
 				<yearFounded>1921</yearFounded>
-				<!-- <univImage source="asdfjk"></univImage> -->
+				<!-- <univImage>
+					<src href="">
+				</univImage> -->
 				<rectorName>проф. Димитър Цанев</rectorName>
-				<numberOfStudents>asdfjk</numberOfStudents>
+				<numberOfStudents>430</numberOfStudents>
 				<numberOfBachPrograms>33</numberOfBachPrograms>
 				<numberOfMstPrograms>56</numberOfMstPrograms>
 				<numberOfPhDPrograms>2</numberOfPhDPrograms>
@@ -411,7 +425,9 @@
 			<univDetails>
 				<name>Нов български университет - София</name>
 				<yearFounded>1991</yearFounded>
-				<!-- <univImage source="asdfjk"></univImage> -->
+				<!-- <univImage>
+					<src href="">
+				</univImage> -->
 				<rectorName>Проф. д-р Пламен Бочков</rectorName>
 				<numberOfStudents>10000</numberOfStudents>
 				<numberOfBachPrograms>50</numberOfBachPrograms>
@@ -471,7 +487,9 @@
 			<univDetails>
 				<name>Пловдивски университет "Паисий Хилендарски"</name>
 				<yearFounded>1962</yearFounded>
-				<!-- <univImage source="asdfjk"></univImage> -->
+				<!-- <univImage>
+					<src href="">
+				</univImage> -->
 				<rectorName>проф. д-р Румен Младенов</rectorName>
 				<numberOfStudents>16700</numberOfStudents>
 				<numberOfBachPrograms>64</numberOfBachPrograms>
@@ -544,7 +562,9 @@
 			<univDetails>
 				<name>Русенски университет "Ангел Кънчев"</name>
 				<yearFounded>1946</yearFounded>
-				<!-- <univImage source="asdfjk"></univImage> -->
+				<!-- <univImage>
+					<src href="">
+				</univImage> -->
 				<rectorName>проф. Христо Белоев</rectorName>
 				<numberOfStudents>11000</numberOfStudents>
 				<numberOfBachPrograms>50</numberOfBachPrograms>
@@ -613,7 +633,9 @@
 			<univDetails>
 				<name>Университет за национално и световно стопанство - София</name>
 				<yearFounded>1920</yearFounded>
-				<!-- <univImage source="asdfjk"></univImage> -->
+				<!-- <univImage>
+					<src href="">
+				</univImage> -->
 				<rectorName>проф. Стати Статев</rectorName>
 				<numberOfStudents>21 272 </numberOfStudents>
 				<numberOfBachPrograms>43</numberOfBachPrograms>
@@ -679,7 +701,9 @@
 			<univDetails>
 				<name>Шуменски университет "Епископ Константин Преславски"</name>
 				<yearFounded>1971</yearFounded>
-				<!-- <univImage source="asdfjk"></univImage> -->
+				<!-- <univImage>
+					<src href="">
+				</univImage> -->
 				<rectorName>проф. Георги Колев</rectorName>
 				<numberOfStudents>9876</numberOfStudents>
 				<numberOfBachPrograms>50</numberOfBachPrograms>

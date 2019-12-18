@@ -13,7 +13,8 @@
 									numberOfStudents, numberOfBachPrograms?, numberOfMstPrograms?, numberOfPhDPrograms?)>
 		 		<!ELEMENT name (#PCDATA)>
 		 		<!ELEMENT yearFounded (#PCDATA)>
-		 		<!ELEMENT univImage EMPTY>
+		 		<!ELEMENT univImage (src)>
+				 	<!ELEMENT src EMPTY> 
 		 		<!ELEMENT rectorName (#PCDATA)>
 		 		<!ELEMENT numberOfStudents (#PCDATA)>
 		 		<!ELEMENT numberOfBachPrograms (#PCDATA)>
@@ -51,7 +52,7 @@
 
 <!-- universities attribute list -->
 <!ATTLIST university univId ID #REQUIRED>
-<!ATTLIST univImage source ENTITY #REQUIRED>
+<!ATTLIST src href ENTITY #REQUIRED>
 <!ATTLIST location regionIDRef IDREFS #REQUIRED>
 <!-- these could be made entities  -->
 <!ATTLIST webSite href CDATA #REQUIRED>
