@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- xsl reference -->
-<?xml-stylesheet type="text/xsl" href="universities-in-bulgaria.xsl"?>
+<?xml-stylesheet type="text/xsl" href="universities-in-bulgaria-2.xsl"?>
 
 <!-- outer dtd reference -->
 <!DOCTYPE universitiesInBulgaria SYSTEM "universities-in-bulgaria.dtd">
@@ -414,7 +414,7 @@
 				</program>
 			</programsAccreditation>
 			<listOfFaculties>
-				<faculty>Теоретико‐композиторски и диригентски факултет</faculty>
+				<faculty>Теоретико-композиторски и диригентски факултет</faculty>
 				<faculty>Инструментален факултет</faculty>
 				<faculty>Вокален факултет</faculty>
 			</listOfFaculties>
