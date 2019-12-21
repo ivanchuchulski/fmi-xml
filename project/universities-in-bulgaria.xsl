@@ -143,25 +143,36 @@
                     Структура на <xsl:value-of select="//university[@univId='uni1']/univDetails/name"></xsl:value-of>
                 </fo:block> 
                 
-                <!-- faculty list -->
-                <!-- <fo:block position="relative" font-family="Arial"  font-size="12pt" color="black" 
-                    start-indent ="5mm" end-indent="5mm" padding-before="0mm" font-weight="normal" margin-left="0.2cm">
-                    Факултети : 
-                </fo:block>
-
-                <fo:block position="relative" font-family="Arial" font-size="14pt" color="black" 
-                start-indent="5mm" end-indent="5mm" padding-before="0mm" margin-left="2.5cm" text-align="justify">
-                    <xsl:apply-templates select="//university[@univId='uni1']/listOfFaculties"></xsl:apply-templates> 
-                </fo:block>  -->
-                
+                <!-- faculties -->
                 <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="14pt" color="black" 
                 padding-before="5mm" margin-left="2cm">
                     Факултети : 
                 </fo:block> 
-
                 <fo:block position="relative" start-indent="5mm" end-indent="5mm" padding-before="0mm" margin-left="2.5cm" text-align="justify">
                     <xsl:apply-templates select="//university[@univId='uni1']/listOfFaculties"></xsl:apply-templates> 
                 </fo:block>
+                
+                <!-- branches -->
+                <xsl:if test="//university[@univId='uni1']/listOfBranches">
+                    <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="14pt" color="black" 
+                    padding-before="5mm" margin-left="2cm">
+                        Филиали : 
+                    </fo:block> 
+                    <fo:block position="relative" start-indent="5mm" end-indent="5mm" padding-before="0mm" margin-left="2.5cm" text-align="justify">
+                        <xsl:apply-templates select="//university[@univId='uni1']/listOfBranches"></xsl:apply-templates> 
+                    </fo:block>
+                </xsl:if>
+
+                <!-- departments -->
+                <xsl:if test="//university[@univId='uni1']/listOfDepartments">
+                    <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="14pt" color="black" 
+                    padding-before="5mm" margin-left="2cm">
+                        Департаменти : 
+                    </fo:block>
+                    <fo:block position="relative" start-indent="5mm" end-indent="5mm" padding-before="0mm" margin-left="2.5cm" text-align="justify">
+                        <xsl:apply-templates select="//university[@univId='uni1']/listOfDepartments"></xsl:apply-templates> 
+                    </fo:block>
+                </xsl:if>
 
             </fo:block-container>
         </fo:flow>
@@ -209,25 +220,36 @@
 <!-- template for university faculties -->
 <xsl:template match="listOfFaculties">
 
-    <!--  -->
+    <!-- <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="14pt" color="black" 
+    padding-before="5mm" margin-left="2cm">
+        <xsl:value-of select="text()"></xsl:value-of> : 
+    </fo:block>  -->
+
 	<xsl:for-each select="./faculty">
 		<fo:block position="relative" font-family="Arial"  font-size="12pt" color="black" 
         start-indent ="30mm" end-indent="5mm" padding-before="0mm" font-weight="normal" margin-left="0.5cm">
-			-<xsl:value-of select="text()"/>
-		</fo:block>
+			-<xsl:value-of select="text()"></xsl:value-of>
+		</fo:block>		
+	</xsl:for-each>
+</xsl:template>
 
-        <!-- <fo:list-block position="relative" font-family="Arial"  font-size="12pt" color="black" 
-        start-indent ="5mm" end-indent="5mm" padding-before="0mm" font-weight="normal" margin-left="0.2cm">
-            <fo:list-item>
-                <fo:list-item-label>
-                    <fo:block>-</fo:block>
-                </fo:list-item-label>
-                <fo:list-item-body>
-                    <fo:block><xsl:value-of select="text()"/></fo:block>
-                </fo:list-item-body>
-            </fo:list-item>
-        </fo:list-block> -->
-		
+<!-- template for university branches -->
+<xsl:template match="listOfBranches">
+	<xsl:for-each select="./branch">
+		<fo:block position="relative" font-family="Arial"  font-size="12pt" color="black" 
+        start-indent ="30mm" end-indent="5mm" padding-before="0mm" font-weight="normal" margin-left="0.5cm">
+			-<xsl:value-of select="text()"></xsl:value-of>
+		</fo:block>		
+	</xsl:for-each>
+</xsl:template>
+
+<!-- template for university departmetns -->
+<xsl:template match="listOfDepartments">
+	<xsl:for-each select="./department">
+		<fo:block position="relative" font-family="Arial"  font-size="12pt" color="black" 
+        start-indent ="30mm" end-indent="5mm" padding-before="0mm" font-weight="normal" margin-left="0.5cm">
+			-<xsl:value-of select="text()"></xsl:value-of>
+		</fo:block>		
 	</xsl:for-each>
 </xsl:template>
 
