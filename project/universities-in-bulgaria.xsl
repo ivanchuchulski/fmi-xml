@@ -30,18 +30,22 @@
 		
     <!-- for each university do 3 pages -->
     <!-- 1st page : 
-        //university[@univId='uni1']/univDetails/name
+        name
         picture 
         year founded
-        contacts
+        rector
+        # students
+        location
+        phone
+        email
     -->
     <!-- 2nd page : 
-        programs accreditation as table?    
+        faculties
+        branches - if present
+        departments - if present
     -->
     <!-- 3rd page : 
-        faculties
-        branches
-        departments
+        programs accreditation as table?   
     -->
 
     <!-- sofia university part 1 -->		
@@ -127,9 +131,27 @@
             </fo:block-container>
         </fo:flow>
     </fo:page-sequence>
-<!-- 
-    sofia university 2 part
-    <fo:page-sequence master-reference="page">
+
+    <!-- sofia uviversity 2 part -->
+    <!-- <fo:page-sequence master-reference="page">
+        <fo:flow flow-name="xsl-region-body">
+            <fo:block-container position ="absolute" top="-2.5cm" left = "-2.5cm">					
+                <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="13pt" color="black" 
+                padding-before="12mm" padding-after="5mm" margin-left="2cm">
+                    Допълнителна полезна информация за <xsl:value-of select="//hotel[@hotelID='ATLASGS']/hotel_name"/>: 
+                </fo:block> 
+                
+                <fo:block position="relative" font-family="Arial"  font-size="14pt" color="black" start-indent ="5mm" end-indent="5mm" padding-before="0mm" margin-left="2.5cm" text-align = "justify">
+                    <xsl:apply-templates select="//hotel[@hotelID='ATLASGS']/more_info"/> 
+                </fo:block> 
+                
+            </fo:block-container>
+        </fo:flow>
+    </fo:page-sequence> -->
+
+
+    <!-- sofia university 2 part -->
+    <!-- <fo:page-sequence master-reference="page">
         <fo:flow flow-name="xsl-region-body">
             <fo:block-container position ="absolute" top="-2.5cm" left = "-2.5cm">					
                 <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="15pt" color="black" 
@@ -154,23 +176,6 @@
                 
             </fo:block-container>
         </fo:flow>
-    </fo:page-sequence>
-
-    sofia uviversity 3 part
-    <fo:page-sequence master-reference="page">
-        <fo:flow flow-name="xsl-region-body">
-            <fo:block-container position ="absolute" top="-2.5cm" left = "-2.5cm">					
-                <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="13pt" color="black" 
-                padding-before="12mm" padding-after="5mm" margin-left="2cm">
-                    Допълнителна полезна информация за <xsl:value-of select="//hotel[@hotelID='ATLASGS']/hotel_name"/>: 
-                </fo:block> 
-                
-                <fo:block position="relative" font-family="Arial"  font-size="14pt" color="black" start-indent ="5mm" end-indent="5mm" padding-before="0mm" margin-left="2.5cm" text-align = "justify">
-                    <xsl:apply-templates select="//hotel[@hotelID='ATLASGS']/more_info"/> 
-                </fo:block> 
-                
-            </fo:block-container>
-        </fo:flow>
     </fo:page-sequence> -->
 
 
@@ -180,7 +185,7 @@
 
 <!-- template for images -->
 <xsl:template match="src">
-	<fo:external-graphic src="{unparsed-entity-uri(@href)}" content-height="250" content-width="350"/>
+	<fo:external-graphic src="{unparsed-entity-uri(@href)}" content-height="350" content-width="490"></fo:external-graphic>
 </xsl:template>
 
 </xsl:stylesheet>
