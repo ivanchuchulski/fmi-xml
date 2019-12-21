@@ -135,18 +135,34 @@
     <!-- sofia uviversity 2 part -->
     <fo:page-sequence master-reference="unicatalog">
         <fo:flow flow-name="xsl-region-body">
-            <!-- page header -->
-            <fo:block-container position="absolute" top="-2.5cm" left="-2.5cm">					
-                <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="13pt" color="black" 
-                padding-before="12mm" padding-after="5mm" margin-left="2cm">
+            <fo:block-container position="absolute" top="-2.5cm" left="-2.5cm">
+
+                <!-- page header -->
+                <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="16pt" color="black" 
+                padding-before="5mm" padding-after="5mm" margin-left="1cm">
                     Структура на <xsl:value-of select="//university[@univId='uni1']/univDetails/name"></xsl:value-of>
                 </fo:block> 
                 
+                <!-- faculty list -->
+                <!-- <fo:block position="relative" font-family="Arial"  font-size="12pt" color="black" 
+                    start-indent ="5mm" end-indent="5mm" padding-before="0mm" font-weight="normal" margin-left="0.2cm">
+                    Факултети : 
+                </fo:block>
+
                 <fo:block position="relative" font-family="Arial" font-size="14pt" color="black" 
                 start-indent="5mm" end-indent="5mm" padding-before="0mm" margin-left="2.5cm" text-align="justify">
                     <xsl:apply-templates select="//university[@univId='uni1']/listOfFaculties"></xsl:apply-templates> 
-                </fo:block> 
+                </fo:block>  -->
                 
+                <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="14pt" color="black" 
+                padding-before="5mm" margin-left="2cm">
+                    Факултети : 
+                </fo:block> 
+
+                <fo:block position="relative" start-indent="5mm" end-indent="5mm" padding-before="0mm" margin-left="2.5cm" text-align="justify">
+                    <xsl:apply-templates select="//university[@univId='uni1']/listOfFaculties"></xsl:apply-templates> 
+                </fo:block>
+
             </fo:block-container>
         </fo:flow>
     </fo:page-sequence>
@@ -193,15 +209,10 @@
 <!-- template for university faculties -->
 <xsl:template match="listOfFaculties">
 
-    <fo:block position="relative" font-family="Arial"  font-size="12pt" color="black" 
-    start-indent ="5mm" end-indent="5mm" padding-before="0mm" font-weight="normal" margin-left="0.2cm">
-        Факултети    
-    </fo:block>
-
+    <!--  -->
 	<xsl:for-each select="./faculty">
-        <!--  -->
 		<fo:block position="relative" font-family="Arial"  font-size="12pt" color="black" 
-        start-indent ="10mm" end-indent="5mm" padding-before="0mm" font-weight="normal" margin-left="0.5cm">
+        start-indent ="30mm" end-indent="5mm" padding-before="0mm" font-weight="normal" margin-left="0.5cm">
 			-<xsl:value-of select="text()"/>
 		</fo:block>
 
