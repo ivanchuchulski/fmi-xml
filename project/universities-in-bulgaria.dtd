@@ -70,4 +70,7 @@
 <!ENTITY musofia SYSTEM "university-pictures/musofia.jpg" NDATA jpg>
 <!ENTITY natifz SYSTEM "university-pictures/natfiz.jpg" NDATA jpg>
 <!ENTITY muzikalna SYSTEM "university-pictures/muzikalna.jpg" NDATA jpg>
-<!ENTITY nbu SYSTEM "university-pictures/nbu.jpg" NDATA jpg>
+<!ENTITY plovdivski SYSTEM "university-pictures/plovdivski.jpg" NDATA jpg>
+
+
+

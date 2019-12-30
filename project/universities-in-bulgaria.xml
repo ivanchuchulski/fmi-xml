@@ -487,9 +487,9 @@
 			<univDetails>
 				<name>Пловдивски университет "Паисий Хилендарски"</name>
 				<yearFounded>1962</yearFounded>
-				<!-- <univImage>
-					<src href=""></src>
-				</univImage> -->
+				<univImage>
+					<src href="plovdivski"></src>
+				</univImage>
 				<rectorName>проф. д-р Румен Младенов</rectorName>
 				<numberOfStudents>16700</numberOfStudents>
 				<numberOfBachPrograms>64</numberOfBachPrograms>
