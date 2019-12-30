@@ -4,8 +4,6 @@
 	the !DOCTYPE marker should be removed
  -->
 
-
-<!--<!DOCTYPE universitiesInBulgaria [ -->
 <!ELEMENT universitiesInBulgaria (universities, regions)>
 	<!ELEMENT universities (university+)>
 		<!ELEMENT university (univDetails, univContacts, programsAccreditation, listOfFaculties, listOfBranches?, listOfDepartments?)>		
@@ -66,5 +64,3 @@
 
 <!-- entities -->
 <!ENTITY su SYSTEM "university-pictures/su.jpg" NDATA jpg>
-
-<!--]>-->
