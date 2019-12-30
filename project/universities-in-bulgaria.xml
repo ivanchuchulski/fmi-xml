@@ -287,9 +287,9 @@
 			<univDetails>
 				<name>Медицински университет - София</name>
 				<yearFounded>1917</yearFounded>
-				<!-- <univImage>
-					<src href=""></src>
-				</univImage> -->
+				<univImage>
+					<src href="musofia"></src>
+				</univImage>
 				<rectorName>проф. д-р Виктор Златков</rectorName>
 				<numberOfStudents>8311</numberOfStudents>
 				<numberOfBachPrograms>25</numberOfBachPrograms>
