@@ -86,9 +86,9 @@
 			<univDetails>
 				<name>Американски университет в България - Благоевград</name>
 				<yearFounded>1991</yearFounded>
-				<!-- <univImage>
-					<src href="">
-				</univImage> -->
+				<univImage>
+					<src href="aubg"></src>
+				</univImage>
 				<rectorName>д-р Дейвид Р. Еванс</rectorName>
 				<numberOfStudents>1000</numberOfStudents>
 				<numberOfBachPrograms>14</numberOfBachPrograms>
@@ -150,7 +150,7 @@
 				<name>Варненски свободен университет "Черноризец Храбър</name>
 				<yearFounded>1991</yearFounded>
 				<!-- <univImage>
-					<src href="">
+					<src href=""></src>
 				</univImage> -->
 				<rectorName>проф. д-р Петър Христов</rectorName>
 				<numberOfStudents>8000</numberOfStudents>
@@ -215,7 +215,7 @@
 				<name>Великотърновски университет "Св. св. Кирил и Методий"</name>
 				<yearFounded>1963</yearFounded>
 				<!-- <univImage>
-					<src href="">
+					<src href=""></src>
 				</univImage> -->
 				<rectorName>проф. д-р Христо Бонджолов</rectorName>
 				<numberOfStudents>14 200</numberOfStudents>
@@ -288,7 +288,7 @@
 				<name>Медицински университет - София</name>
 				<yearFounded>1917</yearFounded>
 				<!-- <univImage>
-					<src href="">
+					<src href=""></src>
 				</univImage> -->
 				<rectorName>проф. д-р Виктор Златков</rectorName>
 				<numberOfStudents>8311</numberOfStudents>
@@ -348,7 +348,7 @@
 				<name>Национална академия за театрално и филмово изкуство "Кръстьо Сарафов" - София</name>
 				<yearFounded>1948</yearFounded>
 				<!-- <univImage>
-					<src href="">
+					<src href=""></src>
 				</univImage> -->
 				<rectorName>проф. д-р Станислав Семерджиев</rectorName>
 				<numberOfStudents>600</numberOfStudents>
@@ -385,7 +385,7 @@
 				<name>Национална музикална академия "Проф. Панчо Владигеров" - София</name>
 				<yearFounded>1921</yearFounded>
 				<!-- <univImage>
-					<src href="">
+					<src href=""></src>
 				</univImage> -->
 				<rectorName>проф. Димитър Цанев</rectorName>
 				<numberOfStudents>430</numberOfStudents>
@@ -426,7 +426,7 @@
 				<name>Нов български университет - София</name>
 				<yearFounded>1991</yearFounded>
 				<!-- <univImage>
-					<src href="">
+					<src href=""></src>
 				</univImage> -->
 				<rectorName>Проф. д-р Пламен Бочков</rectorName>
 				<numberOfStudents>10000</numberOfStudents>
@@ -488,7 +488,7 @@
 				<name>Пловдивски университет "Паисий Хилендарски"</name>
 				<yearFounded>1962</yearFounded>
 				<!-- <univImage>
-					<src href="">
+					<src href=""></src>
 				</univImage> -->
 				<rectorName>проф. д-р Румен Младенов</rectorName>
 				<numberOfStudents>16700</numberOfStudents>
@@ -563,7 +563,7 @@
 				<name>Русенски университет "Ангел Кънчев"</name>
 				<yearFounded>1946</yearFounded>
 				<!-- <univImage>
-					<src href="">
+					<src href=""></src>
 				</univImage> -->
 				<rectorName>проф. Христо Белоев</rectorName>
 				<numberOfStudents>11000</numberOfStudents>
@@ -634,7 +634,7 @@
 				<name>Университет за национално и световно стопанство - София</name>
 				<yearFounded>1920</yearFounded>
 				<!-- <univImage>
-					<src href="">
+					<src href=""></src>
 				</univImage> -->
 				<rectorName>проф. Стати Статев</rectorName>
 				<numberOfStudents>21 272 </numberOfStudents>
@@ -702,7 +702,7 @@
 				<name>Шуменски университет "Епископ Константин Преславски"</name>
 				<yearFounded>1971</yearFounded>
 				<!-- <univImage>
-					<src href="">
+					<src href=""></src>
 				</univImage> -->
 				<rectorName>проф. Георги Колев</rectorName>
 				<numberOfStudents>9876</numberOfStudents>

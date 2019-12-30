@@ -64,3 +64,9 @@
 
 <!-- entities -->
 <!ENTITY su SYSTEM "university-pictures/su.jpg" NDATA jpg>
+<!ENTITY aubg SYSTEM "university-pictures/aubg.jpg" NDATA jpg>
+
+
+
+
+
