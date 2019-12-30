@@ -701,9 +701,9 @@
 			<univDetails>
 				<name>Шуменски университет "Епископ Константин Преславски"</name>
 				<yearFounded>1971</yearFounded>
-				<!-- <univImage>
-					<src href=""></src>
-				</univImage> -->
+				<univImage>
+					<src href="shumenski"></src>
+				</univImage>
 				<rectorName>проф. Георги Колев</rectorName>
 				<numberOfStudents>9876</numberOfStudents>
 				<numberOfBachPrograms>50</numberOfBachPrograms>

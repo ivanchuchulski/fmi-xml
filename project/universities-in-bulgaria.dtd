@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- TODO
-	the !DOCTYPE marker should be removed
- -->
-
 <!ELEMENT universitiesInBulgaria (universities, regions)>
 	<!ELEMENT universities (university+)>
 		<!ELEMENT university (univDetails, univContacts, programsAccreditation, listOfFaculties, listOfBranches?, listOfDepartments?)>		
@@ -73,5 +69,6 @@
 <!ENTITY plovdivski SYSTEM "university-pictures/plovdivski.jpg" NDATA jpg>
 <!ENTITY rusenski SYSTEM "university-pictures/rusenski.jpg" NDATA jpg>
 <!ENTITY unss SYSTEM "university-pictures/unss.jpg" NDATA jpg>
+<!ENTITY shumenski SYSTEM "university-pictures/shumenski.jpg" NDATA jpg>
 
 
