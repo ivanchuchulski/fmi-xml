@@ -214,9 +214,9 @@
 			<univDetails>
 				<name>Великотърновски университет "Св. св. Кирил и Методий"</name>
 				<yearFounded>1963</yearFounded>
-				<!-- <univImage>
-					<src href=""></src>
-				</univImage> -->
+				<univImage>
+					<src href="vtu"></src>
+				</univImage>
 				<rectorName>проф. д-р Христо Бонджолов</rectorName>
 				<numberOfStudents>14 200</numberOfStudents>
 				<numberOfBachPrograms>64</numberOfBachPrograms>
