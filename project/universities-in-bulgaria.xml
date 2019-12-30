@@ -425,9 +425,9 @@
 			<univDetails>
 				<name>Нов български университет - София</name>
 				<yearFounded>1991</yearFounded>
-				<!-- <univImage>
-					<src href=""></src>
-				</univImage> -->
+				<univImage>
+					<src href="nbu"></src>
+				</univImage>
 				<rectorName>Проф. д-р Пламен Бочков</rectorName>
 				<numberOfStudents>10000</numberOfStudents>
 				<numberOfBachPrograms>50</numberOfBachPrograms>
