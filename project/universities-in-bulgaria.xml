@@ -633,9 +633,9 @@
 			<univDetails>
 				<name>Университет за национално и световно стопанство - София</name>
 				<yearFounded>1920</yearFounded>
-				<!-- <univImage>
-					<src href=""></src>
-				</univImage> -->
+				<univImage>
+					<src href="unss"></src>
+				</univImage>
 				<rectorName>проф. Стати Статев</rectorName>
 				<numberOfStudents>21 272 </numberOfStudents>
 				<numberOfBachPrograms>43</numberOfBachPrograms>
