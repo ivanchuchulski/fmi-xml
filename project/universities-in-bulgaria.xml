@@ -562,9 +562,9 @@
 			<univDetails>
 				<name>Русенски университет "Ангел Кънчев"</name>
 				<yearFounded>1946</yearFounded>
-				<!-- <univImage>
-					<src href=""></src>
-				</univImage> -->
+				<univImage>
+					<src href="rusenski"></src>
+				</univImage>
 				<rectorName>проф. Христо Белоев</rectorName>
 				<numberOfStudents>11000</numberOfStudents>
 				<numberOfBachPrograms>50</numberOfBachPrograms>
