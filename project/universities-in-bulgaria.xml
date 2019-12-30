@@ -384,9 +384,9 @@
 			<univDetails>
 				<name>Национална музикална академия "Проф. Панчо Владигеров" - София</name>
 				<yearFounded>1921</yearFounded>
-				<!-- <univImage>
-					<src href=""></src>
-				</univImage> -->
+				<univImage>
+					<src href="muzikalna"></src>
+				</univImage>
 				<rectorName>проф. Димитър Цанев</rectorName>
 				<numberOfStudents>430</numberOfStudents>
 				<numberOfBachPrograms>33</numberOfBachPrograms>
