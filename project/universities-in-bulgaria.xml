@@ -347,9 +347,9 @@
 			<univDetails>
 				<name>Национална академия за театрално и филмово изкуство "Кръстьо Сарафов" - София</name>
 				<yearFounded>1948</yearFounded>
-				<!-- <univImage>
-					<src href=""></src>
-				</univImage> -->
+				<univImage>
+					<src href="natifz"></src>
+				</univImage>
 				<rectorName>проф. д-р Станислав Семерджиев</rectorName>
 				<numberOfStudents>600</numberOfStudents>
 				<numberOfBachPrograms>24</numberOfBachPrograms>
