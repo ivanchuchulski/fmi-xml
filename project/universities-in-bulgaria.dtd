@@ -65,8 +65,7 @@
 <!-- entities -->
 <!ENTITY su SYSTEM "university-pictures/su.jpg" NDATA jpg>
 <!ENTITY aubg SYSTEM "university-pictures/aubg.jpg" NDATA jpg>
-
-
+<!ENTITY varnafree SYSTEM "university-pictures/varnafree.jpg" NDATA jpg>
 
 
 

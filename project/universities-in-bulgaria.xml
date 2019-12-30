@@ -149,9 +149,9 @@
 			<univDetails>
 				<name>Варненски свободен университет "Черноризец Храбър</name>
 				<yearFounded>1991</yearFounded>
-				<!-- <univImage>
-					<src href=""></src>
-				</univImage> -->
+				<univImage>
+					<src href="varnafree"></src>
+				</univImage>
 				<rectorName>проф. д-р Петър Христов</rectorName>
 				<numberOfStudents>8000</numberOfStudents>
 				<numberOfBachPrograms>37</numberOfBachPrograms>
