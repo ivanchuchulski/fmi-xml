@@ -24,26 +24,6 @@
             </fo:block-container>
         </fo:flow>
     </fo:page-sequence>
-		
-    <!-- for each university do 3 pages -->
-    <!-- 1st page : 
-        name
-        picture 
-        year founded
-        rector
-        # students
-        location
-        phone
-        email
-    -->
-    <!-- 2nd page : 
-        faculties
-        branches - if present
-        departments - if present
-    -->
-    <!-- 3rd page : 
-        programs accreditation as table?   
-    -->
 
     <!-- university 1st page -->
     <xsl:for-each select="//university">
