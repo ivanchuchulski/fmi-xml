@@ -93,10 +93,7 @@
                         padding-before="5mm" margin-left="2cm">
                         Адрес :  
                         <fo:inline position="relative" padding-left="31mm" font-weight="normal" font-size="14pt">
-                            <xsl:value-of select="./univContacts/location/city"></xsl:value-of> 
-                        </fo:inline>
-                        <fo:inline position="relative" padding-left="4mm" font-weight="normal" font-size="14pt">
-                            <xsl:value-of select="./univContacts/location/street"></xsl:value-of> 
+                            <xsl:value-of select="concat('', ./univContacts/location/city/text(), ' ', ./univContacts/location/street/text())"></xsl:value-of> 
                         </fo:inline>
                     </fo:block> 
                     
@@ -135,13 +132,13 @@
             <fo:flow flow-name="xsl-region-body">
                 <fo:block-container position="absolute" top="-2.5cm" left="-2.5cm">
                     <!-- page heading -->
-                    <fo:block position="absolute" text-align="center" font-family="Arial" font-weight="bold" font-size="20pt" 
+                    <fo:block position="absolute" text-align="center" font-family="Arial" font-weight="bold" font-size="30pt" 
                         color="black" padding-before="8mm" margin-left="2cm">
                         Структура на <xsl:value-of select="./univDetails/name"></xsl:value-of>
                     </fo:block>
                     
                     <!-- faculties -->
-                    <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="17pt" color="black" 
+                    <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="20pt" color="black" 
                         padding-before="5mm" margin-left="2cm">
                         Факултети : 
                     </fo:block>
@@ -152,7 +149,7 @@
                     
                     <!-- branches -->
                     <xsl:if test="./listOfBranches">
-                        <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="17pt" color="black" 
+                        <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="20pt" color="black" 
                             padding-before="5mm" margin-left="2cm">
                             Филиали : 
                         </fo:block>
@@ -164,7 +161,7 @@
 
                     <!-- departments -->
                     <xsl:if test="./listOfDepartments">
-                        <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="17pt" color="black" 
+                        <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="20pt" color="black" 
                             padding-before="5mm" margin-left="2cm">
                             Департаменти : 
                         </fo:block>
@@ -182,18 +179,17 @@
             <fo:flow flow-name="xsl-region-body">
                 <fo:block-container position ="absolute" top="-2.5cm" left = "-2.5cm">
                     <!-- page heading -->
-                    <fo:block position="absolute" text-align="center" font-family="Arial" font-weight="bold" font-size="20pt" 
+                    <fo:block position="absolute" text-align="center" font-family="Arial" font-weight="bold" font-size="30pt" 
                         color="black" padding-before="8mm" margin-left="2cm">
                         Направления и оценки на <xsl:value-of select="./univDetails/name"></xsl:value-of>
                     </fo:block> 
 
                     <!-- programs -->
-                    <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="16pt" color="black" 
-                        padding-before="10mm" margin-left="0.5cm">
+                    <fo:block position="relative" padding-before="10mm" margin-left="0.5cm">
                         <xsl:for-each select="./programsAccreditation/program">
-                            <fo:block position="relative" font-family="Arial" font-size="16pt" color="black" font-weight="normal" 
+                            <fo:block position="relative" font-family="Arial" font-size="18pt" color="black" font-weight="normal" 
                                 start-indent="1.5mm" end-indent="1.5mm" padding-before="0mm" margin-left="1cm" text-align="justify">
-                                <xsl:value-of select="concat('-направление ', ./programName/text(), ' : ', ./accreditationScore/text())"></xsl:value-of> 
+                                <xsl:value-of select="concat('-', ./programName/text(), ' : ', ./accreditationScore/text())"></xsl:value-of> 
                             </fo:block>
                         </xsl:for-each>
                     </fo:block> 
@@ -214,7 +210,7 @@
 <!-- template for university faculties -->
 <xsl:template match="listOfFaculties">
 	<xsl:for-each select="./faculty">
-		<fo:block position="relative" font-family="Arial" font-size="16pt" color="black" font-weight="normal" 
+		<fo:block position="relative" font-family="Arial" font-size="18pt" color="black" font-weight="normal" 
             start-indent="30mm" end-indent="5mm" padding-before="0mm" margin-left="0.5cm">
 			-<xsl:value-of select="text()"></xsl:value-of>
 		</fo:block>
@@ -224,7 +220,7 @@
 <!-- template for university branches -->
 <xsl:template match="listOfBranches">
 	<xsl:for-each select="./branch">
-		<fo:block position="relative" font-family="Arial" font-size="16pt" color="black" font-weight="normal" 
+		<fo:block position="relative" font-family="Arial" font-size="18pt" color="black" font-weight="normal" 
             start-indent="30mm" end-indent="5mm" padding-before="0mm" margin-left="0.5cm">
 			-<xsl:value-of select="text()"></xsl:value-of>
 		</fo:block>
@@ -234,7 +230,7 @@
 <!-- template for university departmetns -->
 <xsl:template match="listOfDepartments">
 	<xsl:for-each select="./department">
-		<fo:block position="relative" font-family="Arial" font-size="16pt" color="black" font-weight="normal" 
+		<fo:block position="relative" font-family="Arial" font-size="18pt" color="black" font-weight="normal" 
             start-indent="30mm" end-indent="5mm" padding-before="0mm" margin-left="0.5cm">
 			-<xsl:value-of select="text()"></xsl:value-of>
 		</fo:block>
