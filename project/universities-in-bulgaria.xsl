@@ -13,16 +13,13 @@
         </fo:simple-page-master>
     </fo:layout-master-set>
 
-    <!-- header page -->
+    <!-- title page -->
     <fo:page-sequence master-reference="unicatalog">
         <fo:flow flow-name="xsl-region-body">
             <fo:block-container position ="absolute" top="-2.5cm" left="-2.5cm" >
                 <fo:block position="absolute" text-align="center" font-family="Arial" font-weight="bold" font-size="50pt" 
                     color="black" padding-before="50mm" margin-left="2cm" margin-bottom="50mm">
-                    <!-- <fo:block margin-bottom="50mm"> -->
                         Каталог на университетите в България
-                    <!-- </fo:block> -->
-                    <!-- <fo:external-graphic src="url('images/bulgaria.jpg')" margin-left="5cm" margin-bottom="15mm"></fo:external-graphic> -->
                 </fo:block>
             </fo:block-container>
         </fo:flow>
