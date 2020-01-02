@@ -27,6 +27,8 @@
 
     <!-- university 1st page -->
     <xsl:for-each select="//university">
+        <xsl:variable name="regionid" select="univContacts/location/@regionIDRef"></xsl:variable>
+
         <fo:page-sequence master-reference="unicatalog">
             <fo:flow flow-name="xsl-region-body">
                 <fo:block-container position="absolute" top="-2.5cm" left="-2.5cm">
@@ -101,6 +103,15 @@
                         Имейл : 
                         <fo:inline position="relative" padding-left="30mm" font-weight="normal" font-size="14pt">
                             <xsl:value-of select="./univContacts/email/@mailAddress"></xsl:value-of> 
+                        </fo:inline>
+                    </fo:block>
+
+                    <!-- region -->
+                    <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="15pt" color="black" 
+                        padding-before="5mm" margin-left="2cm">
+                        Регион : 
+                        <fo:inline position="relative" padding-left="29mm" font-weight="normal" font-size="14pt">
+                            <xsl:value-of select="//region[regionDetails[@regionID=$regionid]]/regionName"></xsl:value-of> 
                         </fo:inline>
                     </fo:block>
                 </fo:block-container>
