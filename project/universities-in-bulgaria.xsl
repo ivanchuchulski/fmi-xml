@@ -95,7 +95,7 @@
                         <fo:inline position="relative" padding-left="31mm" font-weight="normal" font-size="14pt">
                             <xsl:value-of select="./univContacts/location/city"></xsl:value-of> 
                         </fo:inline>
-                        <fo:inline position="relative" padding-left="5mm" font-weight="normal" font-size="14pt">
+                        <fo:inline position="relative" padding-left="4mm" font-weight="normal" font-size="14pt">
                             <xsl:value-of select="./univContacts/location/street"></xsl:value-of> 
                         </fo:inline>
                     </fo:block> 
