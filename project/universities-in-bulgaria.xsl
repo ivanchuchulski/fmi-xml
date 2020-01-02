@@ -211,7 +211,7 @@
 <xsl:template match="listOfFaculties">
 	<xsl:for-each select="./faculty">
 		<fo:block position="relative" font-family="Arial" font-size="18pt" color="black" font-weight="normal" 
-            start-indent="30mm" end-indent="5mm" padding-before="0mm" margin-left="0.5cm">
+            start-indent="30mm" end-indent="5mm" padding-before="0mm" margin-left="0cm">
 			-<xsl:value-of select="text()"></xsl:value-of>
 		</fo:block>
 	</xsl:for-each>
@@ -221,7 +221,7 @@
 <xsl:template match="listOfBranches">
 	<xsl:for-each select="./branch">
 		<fo:block position="relative" font-family="Arial" font-size="18pt" color="black" font-weight="normal" 
-            start-indent="30mm" end-indent="5mm" padding-before="0mm" margin-left="0.5cm">
+            start-indent="30mm" end-indent="5mm" padding-before="0mm" margin-left="0cm">
 			-<xsl:value-of select="text()"></xsl:value-of>
 		</fo:block>
 	</xsl:for-each>
@@ -231,7 +231,7 @@
 <xsl:template match="listOfDepartments">
 	<xsl:for-each select="./department">
 		<fo:block position="relative" font-family="Arial" font-size="18pt" color="black" font-weight="normal" 
-            start-indent="30mm" end-indent="5mm" padding-before="0mm" margin-left="0.5cm">
+            start-indent="30mm" end-indent="5mm" padding-before="0mm" margin-left="0cm">
 			-<xsl:value-of select="text()"></xsl:value-of>
 		</fo:block>
 	</xsl:for-each>
