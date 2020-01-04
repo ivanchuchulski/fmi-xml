@@ -769,32 +769,32 @@
 	<regions>
 		<region>
 			<regionName>Североизточен регион</regionName>
-			<regionDetails regionID="BG33"/>
+			<regionDetails regionID="BG33"></regionDetails>
 		</region>
 
 		<region>
 			<regionName>Северен централен регион</regionName>
-			<regionDetails regionID="BG32"/>
+			<regionDetails regionID="BG32"></region>
 		</region>
 
 		<region>
 			<regionName>Северозападен регион</regionName>
-			<regionDetails regionID="BG31"/>
+			<regionDetails regionID="BG31"></region>
 		</region>
 
 		<region>
 			<regionName>Югоизточен регион</regionName>
-			<regionDetails regionID="BG34"/>
+			<regionDetails regionID="BG34"></regionDetails>
 		</region>
 
 		<region>
 			<regionName>Южен централен регион</regionName>
-			<regionDetails regionID="BG42"/>
+			<regionDetails regionID="BG42"></regionDetails>
 		</region>
 
 		<region>
 			<regionName>Югозападен регион</regionName>
-			<regionDetails regionID="BG41"/>
+			<regionDetails regionID="BG41"></regionDetails>
 		</region>
 	</regions>	
 
