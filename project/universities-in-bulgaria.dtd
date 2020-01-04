@@ -3,8 +3,8 @@
 <!ELEMENT universitiesInBulgaria (universities, regions)>
 	<!ELEMENT universities (university+)>
 		<!ELEMENT university (univDetails, univContacts, programsAccreditation, listOfFaculties, listOfBranches?, listOfDepartments?)>		
-			<!ELEMENT univDetails (name, yearFounded, univImage, rectorName, 
-									numberOfStudents, numberOfBachPrograms?, numberOfMstPrograms?, numberOfPhDPrograms?)>
+			<!ELEMENT univDetails (name, yearFounded, univImage, rectorName, numberOfStudents, 
+									numberOfBachPrograms?, numberOfMstPrograms?, numberOfPhDPrograms?)>
 		 		<!ELEMENT name (#PCDATA)>
 		 		<!ELEMENT yearFounded (#PCDATA)>
 		 		<!ELEMENT univImage (src)>
