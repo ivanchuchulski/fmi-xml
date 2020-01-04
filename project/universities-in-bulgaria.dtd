@@ -48,7 +48,6 @@
 <!ATTLIST university univId ID #REQUIRED>
 <!ATTLIST src href ENTITY #REQUIRED>
 <!ATTLIST location regionIDRef IDREFS #REQUIRED>
-<!-- these could be made entities  -->
 <!ATTLIST webSite href CDATA #REQUIRED>
 <!ATTLIST email mailAddress CDATA #REQUIRED>
 
