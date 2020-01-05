@@ -774,12 +774,12 @@
 
 		<region>
 			<regionName>Северен централен регион</regionName>
-			<regionDetails regionID="BG32"></region>
+			<regionDetails regionID="BG32"></regionDetails>
 		</region>
 
 		<region>
 			<regionName>Северозападен регион</regionName>
-			<regionDetails regionID="BG31"></region>
+			<regionDetails regionID="BG31"></regionDetails>
 		</region>
 
 		<region>
