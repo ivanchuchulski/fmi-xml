@@ -47,7 +47,7 @@
 <!-- universities attribute list -->
 <!ATTLIST university univId ID #REQUIRED>
 <!ATTLIST src href ENTITY #REQUIRED>
-<!ATTLIST location regionIDRef IDREFS #REQUIRED>
+<!ATTLIST location regionIDRef IDREF #REQUIRED>
 <!ATTLIST webSite href CDATA #REQUIRED>
 <!ATTLIST email mailAddress CDATA #REQUIRED>
 
