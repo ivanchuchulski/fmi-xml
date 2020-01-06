@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <!-- xsl reference -->
 <?xml-stylesheet type="text/xsl" href="universities-in-bulgaria.xsl"?>
 
 <!-- outer dtd reference -->
 <!DOCTYPE universitiesInBulgaria SYSTEM "universities-in-bulgaria.dtd">
-
-<!-- TODO
-
- -->
 
 <!-- xml structure -->
 <universitiesInBulgaria>
