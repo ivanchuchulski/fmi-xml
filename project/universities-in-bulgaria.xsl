@@ -2,10 +2,11 @@
 <xsl:stylesheet version="1.0" 
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
                 xmlns:fo="http://www.w3.org/1999/XSL/Format">
-<xsl:output method="xml" version="1.0" indent="yes"/>
+<xsl:output method="xml" version="1.0" indent="yes"></xsl:output>
 
 <xsl:template match="/">
 <fo:root>
+    <!-- page structure -->
     <fo:layout-master-set>
         <fo:simple-page-master 
             page-height="297mm" page-width="210mm" margin="5mm 25mm 5mm 25mm" master-name="unicatalog">
@@ -25,10 +26,10 @@
         </fo:flow>
     </fo:page-sequence>
 
-    <!-- university 1st page -->
+    <!-- loop through all universities -->
     <xsl:for-each select="//university">
         <xsl:variable name="regionid" select="univContacts/location/@regionIDRef"></xsl:variable>
-
+        <!-- university 1st page -->
         <fo:page-sequence master-reference="unicatalog">
             <fo:flow flow-name="xsl-region-body">
                 <fo:block-container position="absolute" top="-2.5cm" left="-2.5cm">
@@ -106,7 +107,7 @@
                         </fo:inline>
                     </fo:block>
 
-                    <!-- region -->
+                    <!-- geographic region -->
                     <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="15pt" color="black" 
                         padding-before="5mm" margin-left="2cm">
                         Регион : 

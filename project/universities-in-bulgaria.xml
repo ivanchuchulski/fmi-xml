@@ -6,7 +6,7 @@
 <!-- outer dtd reference -->
 <!DOCTYPE universitiesInBulgaria SYSTEM "universities-in-bulgaria.dtd">
 
-<!-- xml structure -->
+<!-- universities catalog -->
 <universitiesInBulgaria>
 	<universities>
 		<!-- Софийски университет -->

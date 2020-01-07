@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!-- university catalog structure -->
 <!ELEMENT universitiesInBulgaria (universities, regions)>
 	<!ELEMENT universities (university+)>
 		<!ELEMENT university (univDetails, univContacts, programsAccreditation, listOfFaculties, listOfBranches?, listOfDepartments?)>		
