@@ -9,7 +9,7 @@
 <!-- universities catalog -->
 <universitiesInBulgaria>
 	<universities>
-		<!-- Софийски университет -->
+		<!-- Sofia university -->
 		<university univId="uni1">
 			<univDetails>
 				<name>Софийски университет "Св. Климент Охридски"</name>
@@ -78,7 +78,7 @@
 			</listOfDepartments>
 		</university>
 
-		<!-- Американски университет Благоевград -->
+		<!-- American university in Bulgaria -->
 		<university univId="uni2">
 			<univDetails>
 				<name>Американски университет в България - Благоевград</name>
@@ -141,7 +141,7 @@
 			</listOfBranches>
 		</university>
 
-		<!-- Варненски свободен -->
+		<!-- Varna free university -->
 		<university univId="uni3">
 			<univDetails>
 				<name>Варненски свободен университет "Черноризец Храбър</name>
@@ -206,7 +206,7 @@
 			</listOfDepartments>
 		</university>
 
-		<!-- Великотърновски -->
+		<!-- Veliko Tarnovo university -->
 		<university univId="uni4">
 			<univDetails>
 				<name>Великотърновски университет "Св. св. Кирил и Методий"</name>
@@ -279,7 +279,7 @@
 			</listOfDepartments>
 		</university>
 
-		<!-- Медицински София -->
+		<!-- Medical university Sofia -->
 		<university univId="uni5">
 			<univDetails>
 				<name>Медицински университет - София</name>
@@ -339,7 +339,7 @@
 			</listOfDepartments>
 		</university>
 
-		<!-- НАТФИЗ -->
+		<!-- NATFA -->
 		<university univId="uni6">
 			<univDetails>
 				<name>Национална академия за театрално и филмово изкуство "Кръстьо Сарафов" - София</name>
@@ -375,7 +375,7 @@
 			</listOfFaculties>
 		</university>
 
-		<!-- музикална академия -->
+		<!-- National music academy -->
 		<university univId="uni7">
 			<univDetails>
 				<name>Национална музикална академия "Проф. Панчо Владигеров" - София</name>
@@ -416,7 +416,7 @@
 			</listOfFaculties>
 		</university>
 
-		<!-- НБУ -->
+		<!-- NBU -->
 		<university univId="uni8">
 			<univDetails>
 				<name>Нов български университет - София</name>
@@ -478,7 +478,7 @@
 			</listOfFaculties>
 		</university>
 
-		<!-- ПУ -->
+		<!-- Plovdiv university -->
 		<university univId="uni9">
 			<univDetails>
 				<name>Пловдивски университет "Паисий Хилендарски"</name>
@@ -553,7 +553,7 @@
 			</listOfDepartments>
 		</university>
 
-		<!-- Русенски -->
+		<!-- Ruse university -->
 		<university univId="uni10">
 			<univDetails>
 				<name>Русенски университет "Ангел Кънчев"</name>
@@ -624,7 +624,7 @@
 			</listOfBranches>
 		</university>
 
-		<!-- УНСС -->
+		<!-- UNWE -->
 		<university univId="uni11">
 			<univDetails>
 				<name>Университет за национално и световно стопанство - София</name>
@@ -692,7 +692,7 @@
 			</listOfDepartments>
 		</university>
 
-		<!-- Шуменски -->
+		<!-- Shumen university -->
 		<university univId="uni12">
 			<univDetails>
 				<name>Шуменски университет "Епископ Константин Преславски"</name>
@@ -762,7 +762,7 @@
 		</university>
 	</universities>
 
-	<!-- regions -->
+	<!-- geographic regios -->
 	<regions>
 		<region>
 			<regionName>Североизточен регион</regionName>
